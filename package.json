@@ -1,0 +1,30 @@
+{
+  "name": "portfoliov2",
+  "version": "1.0.0",
+  "description": "8 weeks into the Mayden Academy code bootcamp, decided to have a go re-doing my online portfolio using SASS, Gulp, Babel, jQuery, JS, BOOTSTRAP along with HTML.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-babel-minify": "^0.5.1",
+    "gulp-plumber": "^1.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisTregaskis/portfolioV2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisTregaskis/portfolioV2/issues"
+  },
+  "homepage": "https://github.com/ChrisTregaskis/portfolioV2#readme"
+}
