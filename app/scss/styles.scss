@@ -1,3 +1,18 @@
+$titleFont: 'Amatic SC', cursive;
+$deepDark: #111;
+$darkMain: #222;
+$lightMain: #f4f1d0;
+$blueLight:#536482;
+$blueDark: #34495e;
+$greenLight: #2ecc71;
+$greenDark: #27ae60;
+$purpleLight: #9b59b6;
+$purpleDark: #8e44ad;
+$orangeLight: #e67e22;
+$orangeDark: #d35400;
+//$boxShadowMain: x
+//$boxShadowHover: x
+
 * {
   box-sizing: border-box
 }
@@ -11,19 +26,6 @@ body {
   font-family: 'Nanum Gothic', sans-serif;
 }
 
-$titleFont: 'Amatic SC', cursive;
-$deepDark: #111;
-$darkMain: #222;
-$lightMain: #f4f1d0;
-$blueLight:#536482;
-$blueDark: #34495e;
-$greenLight: #2ecc71;
-$greenDark: #27ae60;
-$purpleLight: #9b59b6;
-$purpleDark: #8e44ad;
-//$boxShadowMain: x
-//$boxShadowHover: x
-
 /*-----------------------------------*/
 /* HEADER */
 /*-----------------------------------*/
@@ -31,20 +33,28 @@ $purpleDark: #8e44ad;
 .header-container {
   position: relative;
   height: 100vh;
-  background-image: linear-gradient(to top, $purpleDark 20%, $darkMain 80%);
+  background-image: linear-gradient(to top, #d35400 10%, $darkMain 90%);
 }
 
-header {
+.header-content {
   text-align: center;
   color: $lightMain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-header h1,
-header h3 {
+.header-content-1 {
+  width: 400px;
+}
+
+.header-content-1 h1,
+.header-content-1 h3 {
   font-family: $titleFont;
 }
 
-header h1 {
+.header-content-1 h1 {
   letter-spacing: 0.6rem;
   font-weight: bold;
 }
