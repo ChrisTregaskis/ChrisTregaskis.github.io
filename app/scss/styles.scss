@@ -4,5 +4,47 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: $darkMain;
   font-family: 'Nanum Gothic', sans-serif;
+}
+
+$titleFont: 'Amatic SC', cursive;
+$deepDark: #111;
+$darkMain: #222;
+$lightMain: #f4f1d0;
+$blueLight:#536482;
+$blueDark: #34495e;
+$greenLight: #2ecc71;
+$greenDark: #27ae60;
+$purpleLight: #9b59b6;
+$purpleDark: #8e44ad;
+//$boxShadowMain: x
+//$boxShadowHover: x
+
+/*-----------------------------------*/
+/* HEADER */
+/*-----------------------------------*/
+
+.header-container {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(to top, $purpleDark 20%, $darkMain 80%);
+}
+
+header {
+  text-align: center;
+  color: $lightMain;
+}
+
+header h1,
+header h3 {
+  font-family: $titleFont;
+}
+
+header h1 {
+  letter-spacing: 0.6rem;
+  font-weight: bold;
 }

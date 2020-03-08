@@ -4,3 +4,23 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Nanum Gothic', sans-serif; }
+
+/*-----------------------------------*/
+/* HEADER */
+/*-----------------------------------*/
+.header-container {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(to top, #8e44ad 20%, #222 80%); }
+
+header {
+  text-align: center;
+  color: #f4f1d0; }
+
+header h1,
+header h3 {
+  font-family: "Amatic SC", cursive; }
+
+header h1 {
+  letter-spacing: 0.6rem;
+  font-weight: bold; }
