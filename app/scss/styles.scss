@@ -45,6 +45,24 @@ $orangeDark: #d35400;
   100% { color: #44eeff }
 }
 
+@keyframes moveWave {
+  0% {
+    transform: translateX(0)  scaleY(1.05)
+  }
+  25% {
+    transform: translateX(-25%)  scaleY(1)
+  }
+  50% {
+    transform: translateX(-50%)  scaleY(1.05)
+  }
+  75% {
+    transform: translateX(-25%) scaleY(1)
+  }
+  100% {
+    transform: translateX(0) scaleY(1.05)
+  }
+}
+
 * {
   box-sizing: border-box
 }
@@ -73,6 +91,68 @@ ul:active, a:active {
   height: 100vh;
   background-image: linear-gradient(to top, #d35400 10%, $darkMain 90%);
 }
+
+// - - -  waves  - - - //
+
+.wave-animation {
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  bottom: -1px;
+}
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background-size: 100% 150px;
+  background-position: 0 bottom;
+  bottom: -1px;
+  background-repeat: repeat no-repeat;
+}
+
+.bg-top {
+  z-index: 15;
+  opacity: 0.4;
+}
+
+.bg-middle {
+  z-index: 10;
+  opacity: 0.65;
+}
+
+.bg-bottom {
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.wave-top {
+  background-size: 100% 200px;
+}
+
+.wave-animation .wave-top {
+  animation: moveWave 10s;
+}
+
+.wave-middle {
+  background-size: 100% 250px;
+}
+
+.wave-animation .wave-middle {
+  animation: moveWave 17s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.wave-bottom {
+  background-size: 100% 200px;
+}
+
+.wave-animation .wave-bottom {
+  animation: moveWave 23s ease-in-out infinite;
+}
+
+// - - -  header content - - - //
 
 .header-content {
   text-align: center;
