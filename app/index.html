@@ -9,24 +9,44 @@
     <script defer src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script defer rel="script" src="js/jQuery.js"></script>
     <script defer rel="script" src="js/es6/index.js"></script>
-    <script defer src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script defer rel="script" src="js/es6/animations.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script defer src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <link type="text/css" rel="stylesheet" href="css/styles.css"/>
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="headers-2"></div>
+    <div class="headers-1"></div>
     <div class="header-container">
-        <div class="header-content header-content-1">
-            <h1>CHRIS<br>TREGASKIS</h1>
+        <div class="header-content lax header-content-1" data-lax-opacity="0 1, 200 1, 550 0">
+            <h1 class="lax" data-lax-preset="zoomOut-0.9 fadeOut">CHRIS<br>TREGASKIS</h1>
             <h3>Full Stack Developer</h3>
             <div class="social-icons">
-                <a href="https://github.com/ChrisTregaskis"><ion-icon class="github-ion" name="logo-github"></ion-icon></a>
-                <a href="https://codepen.io/christregaskis"><ion-icon class="codepen-ion" name="logo-codepen"></ion-icon></a>
-                <a href="https://www.instagram.com/akosichrispy/"><ion-icon class="ig-ion" name="logo-instagram"></ion-icon></a>
-                <a href="https://www.linkedin.com/in/christophertregaskis/"><ion-icon class="linkedin-ion" name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/ChrisTregaskis"><ion-icon class="github-ion lax" data-lax-preset="zoomOut fadeOut" name="logo-github"></ion-icon></a>
+                <a href="https://codepen.io/christregaskis"><ion-icon class="codepen-ion lax" data-lax-preset="zoomOut fadeOut" name="logo-codepen"></ion-icon></a>
+                <a href="https://www.instagram.com/akosichrispy/"><ion-icon class="ig-ion lax" data-lax-preset="zoomOut fadeOut" name="logo-instagram"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/christophertregaskis/"><ion-icon class="linkedin-ion lax" data-lax-preset="zoomOut fadeOut" name="logo-linkedin"></ion-icon></a>
             </div>
             <div class="get-in-touch-btn">
-                <a href="#"><button class="btn btn-primary">Get In Touch</button></a>
+                <a href="#"><button class="btn btn-primary lax" data-lax-preset="zoomOut fadeOut">Get In Touch</button></a>
+            </div>
+            <div class="header-down-arrow lax" data-lax-preset="linger">
+                <a id="anchor-about-me" href="#"><svg xmlns='http://www.w3.org/2000/svg' width='35' height='35' viewBox='0 0 512 512'><title>ionicons-v5-a</title><polyline points='112 268 256 412 400 268' style='fill:none;stroke:#f4f1d0;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px'/><line x1='256' y1='392' x2='256' y2='100' style='fill:none;stroke:#f4f1d0;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px'/></svg></a>
+            </div>
+        </div>
+        <div class="header-content lax header-content-2">
+            <div class="chrisPicMain"></div>
+            <h1 class="title-about-me">About Me</h1>
+            <div id="about-me-text">
+                <p class="about-me-text-p">I spent most of 2019 with my kids as a stay at home dad. During this time, explored a career change.
+                    After watching a friend attempt to build an idea of mine through javaScript, I got absolutely encapsulated with code!
+                    I preceded to dabble in different coding languages like python, javaScript, HTML and CSS and loved it! I am now attending the amazing Mayden Full Stack course and enjoying every moment.
+                    I'm looking forward to showing off what I learn here and continuing to developing it over the future.</p>
+            </div>
+            <div class="get-in-touch-btn">
+                <a href="#"><button class="btn btn-primary">Skills</button></a>
             </div>
         </div>
         <div class="wave-animation">
@@ -43,6 +63,7 @@
     </div>
     <div class="container">
         <div class="row">
+            <div class="projects-section"></div>
         </div>
     </div>
 
