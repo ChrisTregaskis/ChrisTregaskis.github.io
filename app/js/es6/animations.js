@@ -44,12 +44,19 @@ $(document).ready(function() {
             $('.header-content-2').css('opacity', '0');
             $('.header-content-2').css('transition', 'opacity 2s');
         }
-    })
+
+        var scrollView = $(window).scrollTop(),
+            dh = $(document).height(),
+            wh = $(window).height();
+        scrollPercent = (scrollView / (dh-wh)) * 100;
+        $('#progressBar1').css('height', scrollPercent + '%');
+
+    });
 
     document.getElementById('anchor-about-me').addEventListener('click', function() {
         document.scrollingElement.scrollTop = 551;
         return document.scrollingElement.scrollTop
     })
-})
+});
 
 

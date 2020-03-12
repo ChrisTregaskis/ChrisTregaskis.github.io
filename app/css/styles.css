@@ -73,6 +73,17 @@ ul:active, a:active {
   list-style-type: none;
   text-decoration: none; }
 
+::-webkit-scrollbar {
+  width: 0; }
+
+#progressBar1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 5px;
+  border-radius: 10px;
+  background: linear-gradient(to top, #f4f1d0, #222); }
+
 /*-----------------------------------*/
 /* HEADER */
 /*-----------------------------------*/
