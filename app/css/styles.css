@@ -163,8 +163,7 @@ ul:active, a:active {
 
 .header-content-1 h1 {
   letter-spacing: 0.6rem;
-  font-weight: bold;
-  transform: translateX(30.3px); }
+  font-weight: bold; }
 
 .title-about-me {
   letter-spacing: 0.6rem;
