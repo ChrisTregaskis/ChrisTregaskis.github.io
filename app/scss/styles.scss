@@ -1,9 +1,11 @@
-$titleFont: 'Amatic SC', cursive;
+$titleFont: brandon-grotesque, sans-serif;
+$bodyFont: 'Nanum Gothic', sans-serif;
 $deepDark: #111;
 $darkMain: #222;
 $lightMain: #f4f1d0;
+$darkBlue: #2b3546;
+$midBlue: #3b495f;
 $blueLight:#536482;
-$blueDark: #34495e;
 $greenLight: #2ecc71;
 $greenDark: #27ae60;
 $purpleLight: #9b59b6;
@@ -18,7 +20,7 @@ $orangeDark: #d35400;
   25% { color: #ff6600 }
   50% { color: #f2f217 }
   75% { color: #ea5c0f }
-  100% { color: #e56520 }
+  100% { color: #ff2500 }
 }
 
 @keyframes lightColors {
@@ -73,7 +75,7 @@ html {
 
 body {
   background-color: $darkMain;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: $bodyFont;
 }
 
 ul, a,
@@ -82,14 +84,47 @@ ul:active, a:active {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#progressBar1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 5px;
+  border-radius: 10px;
+  background: linear-gradient(to top, $lightMain, transparent);
+}
+
 /*-----------------------------------*/
 /* HEADER */
 /*-----------------------------------*/
 
+.headers-1,
+.headers-2 {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.headers-1 {
+  opacity: 1;
+  background-color: $midBlue;
+}
+
+.headers-2 {
+  opacity: 0;
+  background-color: $darkBlue;
+}
+
 .header-container {
-  position: relative;
-  height: 100vh;
-  background-image: linear-gradient(to top, #d35400 10%, $darkMain 90%);
+  position: fixed;
+  display: flex;
+  justify-content: center;
 }
 
 // - - -  waves  - - - //
@@ -103,7 +138,7 @@ ul:active, a:active {
 }
 
 .wave {
-  position: absolute;
+  position: fixed;
   width: 200%;
   height: 100%;
   background-size: 100% 150px;
@@ -127,54 +162,85 @@ ul:active, a:active {
   opacity: 0.8;
 }
 
-.wave-top {
-  background-size: 100% 200px;
-}
-
-.wave-animation .wave-top {
-  animation: moveWave 10s;
-}
-
-.wave-middle {
-  background-size: 100% 250px;
-}
-
-.wave-animation .wave-middle {
-  animation: moveWave 17s ease-in-out infinite;
-  animation-delay: 2s;
-}
-
-.wave-bottom {
-  background-size: 100% 200px;
-}
-
-.wave-animation .wave-bottom {
-  animation: moveWave 23s ease-in-out infinite;
-}
+//.wave-top {
+//  background-size: 100% 200px;
+//}
+//
+//.wave-animation .wave-top {
+//  animation: moveWave 10s;
+//}
+//
+//.wave-middle {
+//  background-size: 100% 250px;
+//}
+//
+//.wave-animation .wave-middle {
+//  animation: moveWave 17s ease-in-out infinite;
+//  animation-delay: 2s;
+//}
+//
+//.wave-bottom {
+//  background-size: 100% 200px;
+//}
+//
+//.wave-animation .wave-bottom {
+//  animation: moveWave 23s ease-in-out infinite;
+//}
 
 // - - -  header content - - - //
 
 .header-content {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
   text-align: center;
   color: $lightMain;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header-content-1 {
-  width: 400px;
+  width: 600px;
+}
+
+.header-content-2 {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.chrisPicMain {
+  height: 130px;
+  width: 130px;
+  background-image: url("../../img/chrisPicMainCropped.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  transform: scale(0.9);
 }
 
 .header-content-1 h1,
-.header-content-1 h3 {
+.header-content-1 h3,
+.header-content-2 h1 {
   font-family: $titleFont;
 }
 
-.header-content-1 h1 {
+.header-content-1 h1,
+.title-about-me {
   letter-spacing: 0.6rem;
-  font-weight: bold;
+  font-weight: bolder;
+}
+
+.header-content-2 p {
+  font-size: 1.1rem;
+}
+
+#about-me-text {
+  width: 500px;
 }
 
 .social-icons {
@@ -185,7 +251,8 @@ ul:active, a:active {
   justify-content: space-between;
 }
 
-.social-icons ion-icon {
+.social-icons ion-icon,
+.header-down-arrow ion-icon {
   font-size: 35px;
   color: $lightMain;
 }
@@ -227,4 +294,22 @@ ul:active, a:active {
   color: $lightMain;
   box-shadow: inset 0 0 0 2px $lightMain;
   transition: box-shadow 0.6s;
+}
+
+.header-down-arrow svg {
+  transform: scale(1);
+  transition: transform 0.6s;
+}
+
+.header-down-arrow svg:hover {
+  transform: scale(1.2);
+  transition: transform 0.6s;
+}
+
+/*-----------------------------------*/
+/* PROJECTS */
+/*-----------------------------------*/
+
+.projects-section {
+  height: 3000px;
 }
