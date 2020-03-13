@@ -1,9 +1,11 @@
-$titleFont: 'Amatic SC', cursive;
+$titleFont: brandon-grotesque, sans-serif;
+$bodyFont: 'Nanum Gothic', sans-serif;
 $deepDark: #111;
 $darkMain: #222;
 $lightMain: #f4f1d0;
+$darkBlue: #2b3546;
+$midBlue: #3b495f;
 $blueLight:#536482;
-$blueDark: #34495e;
 $greenLight: #2ecc71;
 $greenDark: #27ae60;
 $purpleLight: #9b59b6;
@@ -18,7 +20,7 @@ $orangeDark: #d35400;
   25% { color: #ff6600 }
   50% { color: #f2f217 }
   75% { color: #ea5c0f }
-  100% { color: #e56520 }
+  100% { color: #ff2500 }
 }
 
 @keyframes lightColors {
@@ -73,7 +75,7 @@ html {
 
 body {
   background-color: $darkMain;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: $bodyFont;
 }
 
 ul, a,
@@ -89,11 +91,10 @@ ul:active, a:active {
 #progressBar1 {
   position: fixed;
   top: 0;
-  //left: 0;
   right: 0;
   width: 5px;
   border-radius: 10px;
-  background: linear-gradient(to top, $lightMain, $darkMain);
+  background: linear-gradient(to top, $lightMain, transparent);
 }
 
 /*-----------------------------------*/
@@ -111,13 +112,13 @@ ul:active, a:active {
 }
 
 .headers-1 {
-  background-image: linear-gradient(to top, #d35400 10%, $darkMain 90%);
   opacity: 1;
+  background-color: $midBlue;
 }
 
 .headers-2 {
-  background-image: linear-gradient(to top, #34495e 10%, $darkMain 90%);
   opacity: 0;
+  background-color: $darkBlue;
 }
 
 .header-container {
@@ -202,7 +203,7 @@ ul:active, a:active {
 }
 
 .header-content-1 {
-  width: 400px;
+  width: 600px;
 }
 
 .header-content-2 {
@@ -228,14 +229,10 @@ ul:active, a:active {
   font-family: $titleFont;
 }
 
-.header-content-1 h1 {
-  letter-spacing: 0.6rem;
-  font-weight: bold;
-}
-
+.header-content-1 h1,
 .title-about-me {
   letter-spacing: 0.6rem;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .header-content-2 p {

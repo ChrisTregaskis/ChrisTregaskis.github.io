@@ -8,7 +8,7 @@
   75% {
     color: #ea5c0f; }
   100% {
-    color: #e56520; } }
+    color: #ff2500; } }
 
 @keyframes lightColors {
   0% {
@@ -66,7 +66,7 @@ html {
 
 body {
   background-color: #222;
-  font-family: 'Nanum Gothic', sans-serif; }
+  font-family: "Nanum Gothic", sans-serif; }
 
 ul, a,
 ul:active, a:active {
@@ -82,7 +82,7 @@ ul:active, a:active {
   right: 0;
   width: 5px;
   border-radius: 10px;
-  background: linear-gradient(to top, #f4f1d0, #222); }
+  background: linear-gradient(to top, #f4f1d0, transparent); }
 
 /*-----------------------------------*/
 /* HEADER */
@@ -97,12 +97,12 @@ ul:active, a:active {
   left: 0; }
 
 .headers-1 {
-  background-image: linear-gradient(to top, #d35400 10%, #222 90%);
-  opacity: 1; }
+  opacity: 1;
+  background-color: #3b495f; }
 
 .headers-2 {
-  background-image: linear-gradient(to top, #34495e 10%, #222 90%);
-  opacity: 0; }
+  opacity: 0;
+  background-color: #2b3546; }
 
 .header-container {
   position: fixed;
@@ -150,7 +150,7 @@ ul:active, a:active {
   justify-content: center; }
 
 .header-content-1 {
-  width: 400px; }
+  width: 600px; }
 
 .header-content-2 {
   visibility: hidden;
@@ -170,15 +170,12 @@ ul:active, a:active {
 .header-content-1 h1,
 .header-content-1 h3,
 .header-content-2 h1 {
-  font-family: "Amatic SC", cursive; }
+  font-family: brandon-grotesque, sans-serif; }
 
-.header-content-1 h1 {
-  letter-spacing: 0.6rem;
-  font-weight: bold; }
-
+.header-content-1 h1,
 .title-about-me {
   letter-spacing: 0.6rem;
-  font-weight: bold; }
+  font-weight: bolder; }
 
 .header-content-2 p {
   font-size: 1.1rem; }
