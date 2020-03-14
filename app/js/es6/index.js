@@ -69,8 +69,6 @@ $(document).ready(function() {
             $('.headers-2').css('transition', 'opacity 0.6s');
         }
 
-        //skill section
-
         //progress bar --
         var scrollView = $(window).scrollTop(),
             dh = $(document).height(),

@@ -7,7 +7,9 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
     <script defer rel="script" src="js/jQuery.js"></script>
+    <script defer rel="script" src="js/es6/skills.js"></script>
     <script defer rel="script" src="js/es6/index.js"></script>
     <script defer rel="script" src="js/es6/animations.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
@@ -71,12 +73,19 @@
         <div class="skills-container">
             <h1>languages & tools</h1>
             <div class="skills-buttons">
-                <a><button class="btn btn-primary">Overview</button></a>
-                <a><button class="btn btn-primary">JavaScript</button></a>
-                <a><button class="btn btn-primary">PHP</button></a>
-                <a><button class="btn btn-primary">CSS</button></a>
-                <a><button class="btn btn-primary">Tools</button></a>
-                <a><button class="btn btn-primary">Attributes</button></a>
+                <a id="skill-overview-btn"><button class="btn btn-primary">Overview</button></a>
+                <a id="skill-js-btn"><button class="btn btn-primary">JavaScript</button></a>
+                <a id="skill-php-btn"><button class="btn btn-primary">PHP</button></a>
+                <a id="skill-css-btn"><button class="btn btn-primary">CSS</button></a>
+                <a id="skill-tools-btn"><button class="btn btn-primary">Tools</button></a>
+                <a id="skill-attributes-btn"><button class="btn btn-primary">Attributes</button></a>
+            </div>
+            <div class="spider-graph-container">
+                <canvas id="radar-chart-overview" width="800" height="600"></canvas>
+                <canvas id="radar-chart-js" width="800" height="600"></canvas>
+                <canvas id="radar-chart-php" width="800" height="600"></canvas>
+                <canvas id="radar-chart-tools" width="800" height="600"></canvas>
+                <canvas id="radar-chart-attributes" width="800" height="600"></canvas>
             </div>
         </div>
     </div>
