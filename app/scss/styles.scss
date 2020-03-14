@@ -97,6 +97,10 @@ ul:active, a:active {
   background: linear-gradient(to top, $lightMain, transparent);
 }
 
+.position-fixed {
+  position: fixed;
+}
+
 /*-----------------------------------*/
 /* HEADER */
 /*-----------------------------------*/
@@ -121,12 +125,6 @@ ul:active, a:active {
   background-color: $darkBlue;
 }
 
-.header-container {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-}
-
 // - - -  waves  - - - //
 
 .wave-animation {
@@ -134,7 +132,7 @@ ul:active, a:active {
   width: 100%;
   height: 150px;
   overflow: hidden;
-  bottom: -1px;
+  //bottom: 0;
 }
 
 .wave {
@@ -145,6 +143,7 @@ ul:active, a:active {
   background-position: 0 bottom;
   bottom: -1px;
   background-repeat: repeat no-repeat;
+  opacity: 1;
 }
 
 .bg-top {
@@ -159,7 +158,7 @@ ul:active, a:active {
 
 .bg-bottom {
   z-index: 5;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 //.wave-top {
@@ -273,12 +272,12 @@ ul:active, a:active {
   animation: lightBlueColors 3s linear infinite;
 }
 
-.get-in-touch-btn {
+.main-btn {
   display: block;
   margin-top: .7rem;
 }
 
-.get-in-touch-btn button {
+.main-btn button {
   color: $lightMain;
   background-color: transparent;
   border: 1px solid $lightMain;
@@ -287,7 +286,7 @@ ul:active, a:active {
   transition: box-shadow 0.6s;
 }
 
-.get-in-touch-btn button:hover {
+.main-btn button:hover {
   background-color: transparent;
   cursor: pointer;
   border-color: $lightMain;
@@ -310,6 +309,46 @@ ul:active, a:active {
 /* PROJECTS */
 /*-----------------------------------*/
 
+.skills-to-header-break {
+  height: 1px;
+  width: 100%;
+  margin-top: 1500px;
+  background-color: red;
+}
+
 .projects-section {
+  margin-top: 140px;
   height: 3000px;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+}
+
+.skills-container {
+  color: $darkMain;
+  text-align: center;
+}
+
+.skills-container h1 {
+  font-family: $titleFont;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+}
+
+.skills-buttons button {
+  color: $darkMain;
+  background-color: transparent;
+  border: 1px solid $darkMain;
+  padding: 8px 15px;
+  border-radius: 0;
+  transition: box-shadow 0.6s;
+}
+
+.skills-buttons button:hover {
+  background-color: transparent;
+  cursor: pointer;
+  border-color: $darkMain;
+  color: $darkMain;
+  box-shadow: inset 0 0 0 2px $darkMain;
+  transition: box-shadow 0.6s;
 }

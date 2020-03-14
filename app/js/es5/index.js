@@ -4,7 +4,7 @@ $(document).ready(function () {
   position = 0;
   $(window).scroll(function () {
     console.log(document.scrollingElement.scrollTop);
-    var scroll = document.scrollingElement.scrollTop;
+    var scroll = document.scrollingElement.scrollTop; //header -- 1
 
     if (scroll > position) {
       if (scroll > 500) {
@@ -22,7 +22,7 @@ $(document).ready(function () {
       $('.title-about-me').css('transition', 'margin 1s');
     }
 
-    position = scroll;
+    position = scroll; //header -- 2
 
     if (scroll > 500) {
       $('.header-content-2').css('visibility', 'visible');
@@ -46,6 +46,28 @@ $(document).ready(function () {
       $('.header-content-2').css('transition', 'opacity 2s');
     }
 
+    if (scroll > 900) {
+      $('.wave').css('position', 'absolute');
+      $('.wave').css('transition', 'position 2s');
+      $('.wave-animation').css('bottom', 'auto');
+      $('.header-content').css('z-index', '0');
+    }
+
+    if (scroll < 899) {
+      $('.wave').css('position', 'fixed');
+      $('.wave').css('transition', 'position 2s');
+      $('.header-content').css('z-index', '20');
+    }
+
+    if (scroll > 1150) {
+      $('.headers-1').css('opacity', '0');
+      $('.headers-1').css('transition', 'opacity 0.6s');
+      $('.headers-2').css('opacity', '0');
+      $('.headers-2').css('transition', 'opacity 0.6s');
+    } //skill section
+    //progress bar --
+
+
     var scrollView = $(window).scrollTop(),
         dh = $(document).height(),
         wh = $(window).height();
@@ -54,6 +76,10 @@ $(document).ready(function () {
   });
   document.getElementById('anchor-about-me').addEventListener('click', function () {
     document.scrollingElement.scrollTop = 551;
+    return document.scrollingElement.scrollTop;
+  });
+  document.getElementById('skill-btn').addEventListener('click', function () {
+    document.scrollingElement.scrollTop = 1525;
     return document.scrollingElement.scrollTop;
   });
 });
