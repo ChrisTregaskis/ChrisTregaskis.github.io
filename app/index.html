@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
     <script defer rel="script" src="js/jQuery.js"></script>
     <script defer rel="script" src="js/es6/skills.js"></script>
     <script defer rel="script" src="js/es6/index.js"></script>
@@ -81,11 +81,12 @@
                 <a id="skill-attributes-btn"><button class="btn btn-primary">Attributes</button></a>
             </div>
             <div class="spider-graph-container">
-                <canvas id="radar-chart-overview" width="800" height="600"></canvas>
-                <canvas id="radar-chart-js" width="800" height="600"></canvas>
-                <canvas id="radar-chart-php" width="800" height="600"></canvas>
-                <canvas id="radar-chart-tools" width="800" height="600"></canvas>
-                <canvas id="radar-chart-attributes" width="800" height="600"></canvas>
+                <div class="overview-box canvas-skill"><canvas id="radar-chart-overview"></canvas></div>
+                <div class="js-box canvas-skill"><canvas id="radar-chart-js"></canvas></div>
+                <div class="php-box canvas-skill"><canvas id="radar-chart-php"></canvas></div>
+                <div class="css-box canvas-skill"><canvas id="radar-chart-css"></canvas></div>
+                <div class="tools-box canvas-skill"><canvas id="radar-chart-tools"></canvas></div>
+                <div class="attributes-box canvas-skill"><canvas id="radar-chart-attributes"></canvas></div>
             </div>
         </div>
     </div>

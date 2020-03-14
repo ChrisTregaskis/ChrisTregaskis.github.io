@@ -72,7 +72,8 @@ $(document).ready(function () {
         wh = $(window).height();
     scrollPercent = scrollView / (dh - wh) * 100;
     $('#progressBar1').css('height', scrollPercent + '%');
-  });
+  }); //Click events for header 1 & 2
+
   document.getElementById('anchor-about-me').addEventListener('click', function () {
     document.scrollingElement.scrollTop = 551;
     return document.scrollingElement.scrollTop;
