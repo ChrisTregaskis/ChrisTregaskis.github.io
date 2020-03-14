@@ -215,6 +215,6 @@ $(document).ready(function() {
         attributeChart.destroy();
         attributeChart = new Chart(attributesID, configAttributes);
     })
-    
+
 
 });
