@@ -64,8 +64,7 @@ $(document).ready(function () {
       $('.headers-1').css('transition', 'opacity 0.6s');
       $('.headers-2').css('opacity', '0');
       $('.headers-2').css('transition', 'opacity 0.6s');
-    } //skill section
-    //progress bar --
+    } //progress bar --
 
 
     var scrollView = $(window).scrollTop(),
