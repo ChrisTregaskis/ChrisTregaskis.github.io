@@ -5,7 +5,7 @@ $darkMain: #222;
 $lightMain: #f4f1d0;
 $darkBlue: #2b3546;
 $midBlue: #3b495f;
-$blueLight:#536482;
+$lightBlue:#536482;
 $greenLight: #2ecc71;
 $greenDark: #27ae60;
 $purpleLight: #9b59b6;
@@ -16,11 +16,11 @@ $orangeDark: #d35400;
 //$boxShadowHover: x
 
 @keyframes lavaColors {
-  0% { color: #ff2500 }
+  0% { color: #f2f217 }
   25% { color: #ff6600 }
-  50% { color: #f2f217 }
+  50% { color: #ff2500 }
   75% { color: #ea5c0f }
-  100% { color: #ff2500 }
+  100% { color: #f2f217 }
 }
 
 @keyframes lightColors {
@@ -313,7 +313,6 @@ ul:active, a:active {
   height: 1px;
   width: 100%;
   margin-top: 1500px;
-  background-color: red;
 }
 
 .projects-section {
@@ -352,3 +351,48 @@ ul:active, a:active {
   box-shadow: inset 0 0 0 2px $darkMain;
   transition: box-shadow 0.6s;
 }
+
+.skills-buttons button:active {
+  outline: none;
+  box-shadow: none;
+  background-color: $darkMain;
+  color: #fff;
+}
+
+//being thoughtful for disabled users, amended focus styling
+.skills-buttons button:focus,
+.skills-buttons button:active {
+  outline: none;
+  box-shadow: none;
+  background-color: $darkMain;
+  color: #fff;
+}
+
+.spider-graph-container {
+  height: 400px;
+  width: 500px;
+  margin: 20px auto
+}
+
+.overview-box {
+  visibility: visible;
+  opacity: 1;
+}
+
+.js-box,
+.php-box,
+.css-box,
+.tools-box,
+.attributes-box {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.canvas-skill {
+  position: absolute;
+  height: 400px;
+  width: 800px;
+  left: 50%;
+  transform: translate(-50%);
+}
+

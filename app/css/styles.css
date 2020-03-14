@@ -1,14 +1,14 @@
 @keyframes lavaColors {
   0% {
-    color: #ff2500; }
+    color: #f2f217; }
   25% {
     color: #ff6600; }
   50% {
-    color: #f2f217; }
+    color: #ff2500; }
   75% {
     color: #ea5c0f; }
   100% {
-    color: #ff2500; } }
+    color: #f2f217; } }
 
 @keyframes lightColors {
   0% {
@@ -239,8 +239,7 @@ ul:active, a:active {
 .skills-to-header-break {
   height: 1px;
   width: 100%;
-  margin-top: 1500px;
-  background-color: red; }
+  margin-top: 1500px; }
 
 .projects-section {
   margin-top: 140px;
@@ -273,3 +272,40 @@ ul:active, a:active {
   color: #222;
   box-shadow: inset 0 0 0 2px #222;
   transition: box-shadow 0.6s; }
+
+.skills-buttons button:active {
+  outline: none;
+  box-shadow: none;
+  background-color: #222;
+  color: #fff; }
+
+.skills-buttons button:focus,
+.skills-buttons button:active {
+  outline: none;
+  box-shadow: none;
+  background-color: #222;
+  color: #fff; }
+
+.spider-graph-container {
+  height: 400px;
+  width: 500px;
+  margin: 20px auto; }
+
+.overview-box {
+  visibility: visible;
+  opacity: 1; }
+
+.js-box,
+.php-box,
+.css-box,
+.tools-box,
+.attributes-box {
+  visibility: hidden;
+  opacity: 0; }
+
+.canvas-skill {
+  position: absolute;
+  height: 400px;
+  width: 800px;
+  left: 50%;
+  transform: translate(-50%); }
