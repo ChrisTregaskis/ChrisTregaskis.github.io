@@ -1,15 +1,3 @@
-@keyframes lavaColors {
-  0% {
-    color: #f2f217; }
-  25% {
-    color: #ff6600; }
-  50% {
-    color: #ff2500; }
-  75% {
-    color: #ea5c0f; }
-  100% {
-    color: #f2f217; } }
-
 @keyframes lightColors {
   0% {
     color: #bef1f9; }
@@ -21,30 +9,6 @@
     color: #f0d4b1; }
   100% {
     color: #cbecda; } }
-
-@keyframes igColors {
-  0% {
-    color: #f2aeff; }
-  25% {
-    color: #f2aecf; }
-  50% {
-    color: #f2ae3f; }
-  75% {
-    color: #f2ae6f; }
-  100% {
-    color: #f2ae9f; } }
-
-@keyframes lightBlueColors {
-  0% {
-    color: #44eebb; }
-  25% {
-    color: #44eedd; }
-  50% {
-    color: #44bbff; }
-  75% {
-    color: #44ddff; }
-  100% {
-    color: #44eeff; } }
 
 @keyframes moveWave {
   0% {
@@ -82,7 +46,8 @@ ul:active, a:active {
   right: 0;
   width: 5px;
   border-radius: 10px;
-  background: linear-gradient(to top, #f4f1d0, transparent); }
+  background: linear-gradient(to top, #f4f1d0, transparent);
+  z-index: 50; }
 
 .position-fixed {
   position: fixed; }
@@ -193,17 +158,17 @@ ul:active, a:active {
   font-size: 35px;
   color: #f4f1d0; }
 
-.github-ion:hover {
-  animation: lavaColors 3s linear infinite; }
+.social-icons a {
+  transition: 0.6s ease-out; }
 
-.codepen-ion:hover {
-  animation: lightColors 3s linear infinite; }
+.social-icons a:hover {
+  transform: rotateZ(360deg); }
 
-.ig-ion:hover {
-  animation: igColors 3s linear infinite; }
-
+.github-ion:hover,
+.codepen-ion:hover,
+.ig-ion:hover,
 .linkedin-ion:hover {
-  animation: lightBlueColors 3s linear infinite; }
+  animation: lightColors 3s linear infinite; }
 
 .main-btn {
   display: block;
@@ -234,28 +199,38 @@ ul:active, a:active {
   transition: transform 0.6s; }
 
 /*-----------------------------------*/
-/* PROJECTS */
+/* SKILLS */
 /*-----------------------------------*/
 .skills-to-header-break {
   height: 1px;
   width: 100%;
   margin-top: 1500px; }
 
-.projects-section {
-  margin-top: 140px;
-  height: 3000px;
-  background-color: #fff;
-  position: absolute;
-  width: 100%; }
-
 .skills-container {
   color: #222;
-  text-align: center; }
+  text-align: center;
+  margin-top: 149px;
+  background-color: #fff;
+  width: 100%;
+  height: 650px; }
 
-.skills-container h1 {
+.skills-box {
+  opacity: 0;
+  transition: opacity 1s; }
+
+.skills-box h1 {
   font-family: brandon-grotesque, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.6rem; }
+
+#skills-container-h1 {
+  padding: 100px 0 0 0; }
+
+.skills-buttons {
+  margin: 80px 0 0 0; }
+
+#radar-chart-overview {
+  margin: 50px 0 0 0; }
 
 .skills-buttons button {
   color: #222;
@@ -303,3 +278,28 @@ ul:active, a:active {
   width: 800px;
   left: 50%;
   transform: translate(-50%); }
+
+.dark-div {
+  background-color: #222;
+  width: 100%;
+  height: 20px;
+  margin: 0 0; }
+
+.dark-div-top {
+  margin-top: 60px;
+  opacity: 0.4; }
+
+.dark-div-mid {
+  opacity: 0.65; }
+
+.dark-div-bottom {
+  opacity: 0.95; }
+
+/*-----------------------------------*/
+/* PROJECTS */
+/*-----------------------------------*/
+.projects-section {
+  margin-top: 140px;
+  height: 3000px;
+  position: absolute;
+  width: 100%; }

@@ -47,7 +47,8 @@ $(document).ready(function () {
         display: true,
         text: 'Skills Overview'
       },
-      maintainAspectRatio: true,
+      responsive: true,
+      maintainAspectRatio: false,
       scale: {
         ticks: {
           beginAtZero: true,
@@ -74,7 +75,8 @@ $(document).ready(function () {
         display: true,
         text: 'JavaScript Skills'
       },
-      maintainAspectRatio: true,
+      responsive: true,
+      maintainAspectRatio: false,
       scale: {
         ticks: {
           beginAtZero: true,
@@ -86,7 +88,7 @@ $(document).ready(function () {
   var configPHP = {
     type: typeMain,
     data: {
-      labels: ["mySQL", "DIC & Factories", "mongoDB", "composer", "OOP", "Functional Programing"],
+      labels: ["mySQL", "DIC & Factories", "mongoDB", "composer", "OOP", "Functional P."],
       datasets: [{
         label: labelMain,
         fill: fillMain,
@@ -101,7 +103,8 @@ $(document).ready(function () {
         display: true,
         text: 'PHP Skills'
       },
-      maintainAspectRatio: true,
+      responsive: true,
+      maintainAspectRatio: false,
       scale: {
         ticks: {
           beginAtZero: true,
@@ -128,7 +131,8 @@ $(document).ready(function () {
         display: true,
         text: 'CSS5 Skills'
       },
-      maintainAspectRatio: true,
+      responsive: true,
+      maintainAspectRatio: false,
       scale: {
         ticks: {
           beginAtZero: true,
@@ -155,7 +159,8 @@ $(document).ready(function () {
         display: true,
         text: 'Developer Tool Skills'
       },
-      maintainAspectRatio: true,
+      responsive: true,
+      maintainAspectRatio: false,
       scale: {
         ticks: {
           beginAtZero: true,
@@ -167,14 +172,14 @@ $(document).ready(function () {
   var configAttributes = {
     type: typeMain,
     data: {
-      labels: ["SOLID", "DRY", "Agile", "Scrum", "Customer Service"],
+      labels: ["Customer Service", "DRY", "Agile", "SOLID", "Scrum"],
       datasets: [{
         label: labelMain,
         fill: fillMain,
         backgroundColor: bgColorMain,
         borderWidth: borderWidthMain,
         pointStyle: pointStyleMain,
-        data: [25, 35, 40, 40, 70]
+        data: [70, 35, 40, 25, 40]
       }]
     },
     options: {
@@ -182,7 +187,8 @@ $(document).ready(function () {
         display: true,
         text: 'Attribute Skills'
       },
-      maintainAspectRatio: true,
+      responsive: true,
+      maintainAspectRatio: false,
       scale: {
         ticks: {
           beginAtZero: true,
