@@ -1,0 +1,66 @@
+{
+  "skills": [
+    {
+      "skill_name": "CSS",
+      "skill_types": [
+        {
+          "CSS5": 60,
+          "Bootstrap": 40,
+          "Lax": 30,
+          "SASS": 50
+        }
+      ]
+    },
+    {
+      "skill_name": "JavaScript",
+      "skill_types": [
+        {
+          "jQuery": 60,
+          "node": 20,
+          "babel": 50,
+          "npm": 50,
+          "API": 40,
+          "vanilla": 65,
+          "typescript": 30
+        }
+      ]
+    },
+    {
+      "skill_name": "PHP",
+      "skill_types": [
+        {
+          "DIC": 10,
+          "mySQL": 40,
+          "mongoDB": 10,
+          "composer": 30,
+          "OOP": 40,
+          "Functional": 65
+        }
+      ]
+    },
+    {
+      "skill_name": "Tools",
+      "skill_types": [
+        {
+          "Docker": 40,
+          "gulp": 35,
+          "github": 50,
+          "terminal": 40,
+          "postman": 30
+        }
+      ]
+    },
+    {
+      "skill_name": "Attributes",
+      "skill_types": [
+        {
+          "SOLID": 25,
+          "DRY": 35,
+          "Agile": 40,
+          "Scrum": 40,
+          "CustomerService": 70
+        }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,7 @@
   "description": "8 weeks into the Mayden Academy code bootcamp, decided to have a go re-doing my online portfolio using SASS, Gulp, Babel, jQuery, JS, BOOTSTRAP along with HTML.",
   "main": "gulpfile.js",
   "dependencies": {
+    "chart.js": "^2.9.3",
     "gulp-sass": "^4.0.2"
   },
   "devDependencies": {

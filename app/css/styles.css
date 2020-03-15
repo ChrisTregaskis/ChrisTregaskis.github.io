@@ -1,14 +1,14 @@
 @keyframes lavaColors {
   0% {
-    color: #ff2500; }
+    color: #f2f217; }
   25% {
     color: #ff6600; }
   50% {
-    color: #f2f217; }
+    color: #ff2500; }
   75% {
     color: #ea5c0f; }
   100% {
-    color: #ff2500; } }
+    color: #f2f217; } }
 
 @keyframes lightColors {
   0% {
@@ -84,6 +84,9 @@ ul:active, a:active {
   border-radius: 10px;
   background: linear-gradient(to top, #f4f1d0, transparent); }
 
+.position-fixed {
+  position: fixed; }
+
 /*-----------------------------------*/
 /* HEADER */
 /*-----------------------------------*/
@@ -104,17 +107,11 @@ ul:active, a:active {
   opacity: 0;
   background-color: #2b3546; }
 
-.header-container {
-  position: fixed;
-  display: flex;
-  justify-content: center; }
-
 .wave-animation {
   position: absolute;
   width: 100%;
   height: 150px;
-  overflow: hidden;
-  bottom: -1px; }
+  overflow: hidden; }
 
 .wave {
   position: fixed;
@@ -123,7 +120,8 @@ ul:active, a:active {
   background-size: 100% 150px;
   background-position: 0 bottom;
   bottom: -1px;
-  background-repeat: repeat no-repeat; }
+  background-repeat: repeat no-repeat;
+  opacity: 1; }
 
 .bg-top {
   z-index: 15;
@@ -135,7 +133,7 @@ ul:active, a:active {
 
 .bg-bottom {
   z-index: 5;
-  opacity: 0.8; }
+  opacity: 1; }
 
 .header-content {
   position: fixed;
@@ -207,11 +205,11 @@ ul:active, a:active {
 .linkedin-ion:hover {
   animation: lightBlueColors 3s linear infinite; }
 
-.get-in-touch-btn {
+.main-btn {
   display: block;
   margin-top: .7rem; }
 
-.get-in-touch-btn button {
+.main-btn button {
   color: #f4f1d0;
   background-color: transparent;
   border: 1px solid #f4f1d0;
@@ -219,7 +217,7 @@ ul:active, a:active {
   border-radius: 0;
   transition: box-shadow 0.6s; }
 
-.get-in-touch-btn button:hover {
+.main-btn button:hover {
   background-color: transparent;
   cursor: pointer;
   border-color: #f4f1d0;
@@ -238,5 +236,70 @@ ul:active, a:active {
 /*-----------------------------------*/
 /* PROJECTS */
 /*-----------------------------------*/
+.skills-to-header-break {
+  height: 1px;
+  width: 100%;
+  margin-top: 1500px; }
+
 .projects-section {
-  height: 3000px; }
+  margin-top: 140px;
+  height: 3000px;
+  background-color: #fff;
+  position: absolute;
+  width: 100%; }
+
+.skills-container {
+  color: #222;
+  text-align: center; }
+
+.skills-container h1 {
+  font-family: brandon-grotesque, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem; }
+
+.skills-buttons button {
+  color: #222;
+  background-color: transparent;
+  border: 1px solid #222;
+  padding: 8px 15px;
+  border-radius: 0;
+  transition: box-shadow 0.6s; }
+
+.skills-buttons button:hover {
+  background-color: transparent;
+  cursor: pointer;
+  border-color: #222;
+  color: #222;
+  box-shadow: inset 0 0 0 2px #222;
+  transition: box-shadow 0.6s; }
+
+.skills-buttons button:focus,
+.skills-buttons button:active {
+  outline: none;
+  box-shadow: none;
+  background-color: #222;
+  color: #fff; }
+
+.spider-graph-container {
+  height: 400px;
+  width: 500px;
+  margin: 20px auto; }
+
+.overview-box {
+  visibility: visible;
+  opacity: 1; }
+
+.js-box,
+.php-box,
+.css-box,
+.tools-box,
+.attributes-box {
+  visibility: hidden;
+  opacity: 0; }
+
+.canvas-skill {
+  position: absolute;
+  height: 400px;
+  width: 800px;
+  left: 50%;
+  transform: translate(-50%); }
