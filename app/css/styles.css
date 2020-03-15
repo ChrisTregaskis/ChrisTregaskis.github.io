@@ -250,12 +250,23 @@ ul:active, a:active {
 
 .skills-container {
   color: #222;
-  text-align: center; }
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s; }
 
 .skills-container h1 {
   font-family: brandon-grotesque, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.6rem; }
+
+#skills-container-h1 {
+  margin: 100px 0 0 0; }
+
+.skills-buttons {
+  margin: 80px 0 0 0; }
+
+#radar-chart-overview {
+  margin: 50px 0 0 0; }
 
 .skills-buttons button {
   color: #222;

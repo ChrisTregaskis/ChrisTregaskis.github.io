@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     position = 0;
 
+    //scroll in & out animations
     $(window).scroll(function() {
         console.log(document.scrollingElement.scrollTop)
         var scroll = document.scrollingElement.scrollTop;
@@ -67,6 +68,31 @@ $(document).ready(function() {
             $('.headers-1').css('transition', 'opacity 0.6s');
             $('.headers-2').css('opacity', '0');
             $('.headers-2').css('transition', 'opacity 0.6s');
+        }
+
+        if(scroll > 1000) {
+            $('.skills-container').css('opacity', '1');
+            $('.skills-container').css('transition', 'opacity 1s');
+
+            $('#skills-container-h1').css('margin', '10px 0 0 0');
+            $('#skills-container-h1').css('transition', 'margin 1s');
+            $('.skills-buttons').css('margin', '10px 0 0 0');
+            $('.skills-buttons').css('transition', 'margin 1s');
+            $('#radar-chart-overview').css('margin', '10px 0 0 0');
+            $('#radar-chart-overview').css('transition', 'margin 1s');
+
+        }
+
+        if (scroll < 1100){
+            $('.skills-container').css('opacity', '0');
+            $('.skills-container').css('transition', 'opacity 1s');
+
+            $('#skills-container-h1').css('margin', '100px 0 0 0');
+            $('#skills-container-h1').css('transition', 'margin 1s');
+            $('.skills-buttons').css('margin', '80px 0 0 0');
+            $('.skills-buttons').css('transition', 'margin 1s');
+            $('#radar-chart-overview').css('margin', '50px 0 0 0');
+            $('#radar-chart-overview').css('transition', 'margin 1s');
         }
 
         //progress bar --
