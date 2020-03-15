@@ -1,3 +1,26 @@
 @media only screen and (max-width: 600px) {
   .header-content-1 {
     width: 400px; } }
+
+@media only screen and (max-width: 400px) {
+  .header-content-1,
+  .header-content-2 {
+    width: 90%; }
+  .wave-top,
+  .wave-bottom {
+    background-size: 100% 100px; }
+  .wave-middle {
+    background-size: 100% 130px; }
+  #about-me-text {
+    width: 100%; }
+  .skills-container {
+    height: 688px; }
+  .skills-buttons button {
+    margin-top: 5px; }
+  .spider-graph-container {
+    width: 100%; }
+  .canvas-skill {
+    height: 350px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%); } }
