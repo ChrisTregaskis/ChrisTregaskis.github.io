@@ -95,6 +95,7 @@ ul:active, a:active {
   width: 5px;
   border-radius: 10px;
   background: linear-gradient(to top, $lightMain, transparent);
+  z-index: 50;
 }
 
 .position-fixed {
@@ -306,7 +307,7 @@ ul:active, a:active {
 }
 
 /*-----------------------------------*/
-/* PROJECTS */
+/* SKILLS */
 /*-----------------------------------*/
 
 .skills-to-header-break {
@@ -315,29 +316,28 @@ ul:active, a:active {
   margin-top: 1500px;
 }
 
-.projects-section {
-  margin-top: 140px;
-  height: 3000px;
-  background-color: #fff;
-  position: absolute;
-  width: 100%;
-}
-
 .skills-container {
   color: $darkMain;
   text-align: center;
+  margin-top: 149px;
+  background-color: #fff;
+  width: 100%;
+  height: 650px;
+}
+
+.skills-box {
   opacity: 0;
   transition: opacity 1s;
 }
 
-.skills-container h1 {
+.skills-box h1 {
   font-family: $titleFont;
   text-transform: uppercase;
   letter-spacing: 0.6rem;
 }
 
 #skills-container-h1 {
-  margin: 100px 0 0 0;
+  padding: 100px 0 0 0;
 }
 
 .skills-buttons {
@@ -403,3 +403,13 @@ ul:active, a:active {
   transform: translate(-50%);
 }
 
+/*-----------------------------------*/
+/* PROJECTS */
+/*-----------------------------------*/
+
+.projects-section {
+  margin-top: 140px;
+  height: 3000px;
+  position: absolute;
+  width: 100%;
+}
