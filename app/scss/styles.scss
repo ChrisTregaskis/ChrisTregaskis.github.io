@@ -273,6 +273,10 @@ ul:active, a:active {
   transition: box-shadow 0.6s;
 }
 
+.header-down-arrow {
+  margin-top: 0.7rem;
+}
+
 .header-down-arrow svg {
   transform: scale(1);
   transition: transform 0.6s;
