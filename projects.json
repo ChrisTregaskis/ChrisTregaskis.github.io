@@ -1,0 +1,136 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Wine Collection App",
+      "img": "../img/project-wine-collection-app-2.png",
+      "disc": "Built a collection app with view, add and delete features using PHP, SQL, HTML and CSS.",
+      "codeUrl": "https://github.com/ChrisTregaskis/wineCollection",
+      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/collectionsApp/index.php",
+      "rReverseSetting": 0,
+      "rReverse": "r-reverse",
+      "offSet": "offset-md-1"
+    },
+    {
+      "id": 2,
+      "title": "Finance Calculator App",
+      "img": "../img/project-finance-calc.png",
+      "disc": "A simple finance calculator. Built using JS, jQuery, HTML, SCSS, Gulp, Babel, Handlebars.",
+      "codeUrl": "https://github.com/ChrisTregaskis/financeCalc",
+      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/financeCalc/app/",
+      "rReverseSetting": 1,
+      "rReverse": "r-reverse",
+      "offSet": "offset-md-1"
+    },
+    {
+      "id": 3,
+      "title": "Pairs Game Browser App",
+      "img": "../img/project-pairs-game.png",
+      "disc": "Developed a pairs game with Mayden cohort using, HTML, CSS, JS and jQuery.",
+      "codeUrl": "https://github.com/Mayden-Academy/2020-jan-pairsGame",
+      "demoUrl": "https://dev.maydenacademy.co.uk/projects/2020Jan/2020-jan-pairsGame/index.html",
+      "rReverseSetting": 0,
+      "rReverse": "r-reverse",
+      "offSet": "offset-md-1"
+    },
+    {
+      "id": 4,
+      "title": "MAMOI App",
+      "img": "../img/project-default-img.png",
+      "disc": "MAMOI stands for 'make a meal of it'. Using OOP, developed a recipe finder app in with Mayden cohort using, HTML, CSS, PHP, mySQL and Curl.",
+      "codeUrl": "x",
+      "demoUrl": "x",
+      "rReverseSetting": 1,
+      "rReverse": "r-reverse",
+      "offSet": "offset-md-1"
+    },
+    {
+      "id": 5,
+      "title": "Gits Got Talent",
+      "img": "../img/project-default-img.png",
+      "disc": "The current top 3 rated profiles on git using git's API and handlebars.",
+      "codeUrl": "x",
+      "demoUrl": "x",
+      "rReverseSetting": 0,
+      "rReverse": "r-reverse",
+      "offSet": "offset-md-1"
+    },
+    {
+      "id": 6,
+      "title": "Age & Nationalize",
+      "img": "../img/project-default-img.png",
+      "disc": "Enter your name and get back estimated age and likely country origin of name. Experimenting with Chart.js and Asnyc / Await functions",
+      "codeUrl": "x",
+      "demoUrl": "x",
+      "rReverseSetting": 1,
+      "rReverse": "r-reverse",
+      "offSet": "offset-md-1"
+    },
+    {
+      "id": 7,
+      "title": "Simple Login & Click Game",
+      "img": "../img/project-login-click-game.png",
+      "disc": "As a little challenge, built a login page and click-game using; PHP, JS, HTML, CSS",
+      "codeUrl": "https://github.com/ChrisTregaskis/clickGame/tree/master/clickGame",
+      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/clickGame/login.php",
+      "rReverseSetting": 0,
+      "rReverse": "r-reverse",
+      "offSet": "offset-md-1"
+    },
+    {
+      "id": 8,
+      "title": "Pokedex",
+      "img": "../img/project-default-img.png",
+      "disc": "Simple pokedex showing Pokemon and some stats. Exercise using OOP in PHP and mySQL.",
+      "codeUrl": "x",
+      "demoUrl": "x",
+      "rReverseSetting": 1,
+      "rReverse": "r-reverse",
+      "offSet": "offset-md-1"
+    },
+    {
+      "id": 9,
+      "title": "Pilot Project",
+      "img": "../img/project-default-img.png",
+      "disc": "Dynamically filling the prodects section of the page using handlebars",
+      "codeUrl": "x",
+      "demoUrl": "x",
+      "rReverseSetting": 0,
+      "rReverse": "r-reverse",
+      "offSet": "offset-md-1"
+    },
+    {
+      "id": 10,
+      "title": "Planet Orbits SVG Exercise",
+      "img": "../img/project-default-img.png",
+      "disc": "Using just HTML SVG and Keyframes in CSS, created an animated planet orbits svg",
+      "codeUrl": "x",
+      "demoUrl": "x",
+      "rReverseSetting": 1,
+      "rReverse": "r-reverse",
+      "offSet": "offset-md-1"
+    },
+    {
+      "id": 11,
+      "title": "First Ever Portfolio Build!",
+      "img": "../img/project-default-img.png",
+      "disc": "After 1 week of Code Bootcamp at Mayden, built my first portfolio website with HTML, CSS and some basic JS & jQuery.",
+      "codeUrl": "x",
+      "demoUrl": "x",
+      "rReverseSetting": 0,
+      "rReverse": "r-reverse",
+      "offSet": "offset-md-1"
+    },
+    {
+      "id": 12,
+      "title": "Second & Current Portfolio",
+      "img": "../img/project-default-img.png",
+      "disc": "9 weeks into the Mayden bootcamp, decided to have a go re-doing my online portfolio using SASS, Gulp, Babel, jQuery, JS, BOOTSTRAP, Lax, Chart.js along with HTML.",
+      "codeUrl": "https://github.com/ChrisTregaskis/portfolioV2",
+      "demoUrl": "x",
+      "rReverseSetting": 1,
+      "rReverse": "r-reverse",
+      "offSet": "offset-md-1"
+    }
+  ]
+}

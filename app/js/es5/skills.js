@@ -172,14 +172,14 @@ $(document).ready(function () {
   var configAttributes = {
     type: typeMain,
     data: {
-      labels: ["Customer Service", "DRY", "Agile", "SOLID", "Scrum"],
+      labels: ["Customer Service", "DRY", "Agile", "Remote Working", "SOLID", "Scrum"],
       datasets: [{
         label: labelMain,
         fill: fillMain,
         backgroundColor: bgColorMain,
         borderWidth: borderWidthMain,
         pointStyle: pointStyleMain,
-        data: [70, 35, 40, 25, 40]
+        data: [70, 35, 40, 60, 25, 40]
       }]
     },
     options: {
