@@ -13,13 +13,5 @@ $(document).ready(function() {
         return document.scrollingElement.scrollTop
     });
 
-    //Animate project Learn More event
-    document.getElementById('learn-more-btn-1').addEventListener('click', function() {
-        $('#poster-body-image-1').animate({opacity: '1'}, 600)
-    });
-
-    document.getElementById('project-close-btn-1').addEventListener('click', function() {
-        $('#poster-body-image-1').animate({opacity: '0'}, 600)
-    });
 
 });
