@@ -1,9 +1,40 @@
 {{#each projects}}
-
-    <!-- first section is the poster for project -->
-
-
-    <!-- second section is the graphic to sit behind poster for parallax effect -->
-
-
+    <div class="bg-projects-graphic"></div>
+    {{#if rReverseTrue}}
+        <article class="poster row r-reverse">
+            <div class="poster-body col-md-7 offset-md-1 col-lg-5 lax" data-lax-preset="zoomIn fadeIn">
+                <div class="poster-body-header">
+                    <h2>{{title}}</h2>
+                </div>
+                <a href="{{demoUrl}}"><div class="poster-body-image-container" style="background-image: url('{{img}}')">
+                    <div id="poster-body-image-{{id}}" class="poster-body-image"></div>
+                </div></a>
+            </div>
+            <div class="poster-detail col-md-4 col-lg-5">
+                <p class="poster-detail-count">{{posterCount}}</p>
+                <div class="line"></div>
+                <p class="poster-detail-description">{{desc}}</p>
+                <a href="{{demoUrl}}" class="poster-projects-btn"><button class="btn btn-primary">Demo</button></a>
+                <a href="{{codeUrl}}" class="poster-projects-btn"><button class="btn btn-primary">Code</button></a>
+            </div>
+        </article>
+    {{else}}
+        <article class="poster row">
+            <div class="poster-body col-md-7 col-lg-5 lax" data-lax-preset="zoomIn fadeIn">
+                <div class="poster-body-header">
+                    <h2>{{title}}</h2>
+                </div>
+                <a href="{{demoUrl}}"><div class="poster-body-image-container" style="background-image: url('{{img}}')">
+                    <div id="poster-body-image-{{id}}" class="poster-body-image"></div>
+                </div></a>
+            </div>
+            <div class="poster-detail col-md-4 offset-md-1 col-lg-5">
+                <p class="poster-detail-count">{{posterCount}}</p>
+                <div class="line"></div>
+                <p class="poster-detail-description">{{desc}}</p>
+                <a href="{{demoUrl}}" class="poster-projects-btn"><button class="btn btn-primary">Demo</button></a>
+                <a href="{{codeUrl}}" class="poster-projects-btn"><button class="btn btn-primary">Code</button></a>
+            </div>
+        </article>
+    {{/if}}
 {{/each}}
