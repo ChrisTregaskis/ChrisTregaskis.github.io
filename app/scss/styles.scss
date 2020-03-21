@@ -12,7 +12,7 @@ $purpleLight: #9b59b6;
 $purpleDark: #8e44ad;
 $orangeLight: #e67e22;
 $orangeDark: #d35400;
-//$boxShadowMain: x
+$boxShadowMain: 0 20px 12px -12px #000;
 //$boxShadowHover: x
 
 @keyframes lightColors {
@@ -138,30 +138,30 @@ ul:active, a:active {
   opacity: 1;
 }
 
-//.wave-top {
-//  background-size: 100% 200px;
-//}
-//
-//.wave-animation .wave-top {
-//  animation: moveWave 10s;
-//}
-//
-//.wave-middle {
-//  background-size: 100% 250px;
-//}
-//
-//.wave-animation .wave-middle {
-//  animation: moveWave 17s ease-in-out infinite;
-//  animation-delay: 2s;
-//}
-//
-//.wave-bottom {
-//  background-size: 100% 200px;
-//}
-//
-//.wave-animation .wave-bottom {
-//  animation: moveWave 23s ease-in-out infinite;
-//}
+.wave-top {
+  background-size: 100% 200px;
+}
+
+.wave-animation .wave-top {
+  animation: moveWave 10s;
+}
+
+.wave-middle {
+  background-size: 100% 250px;
+}
+
+.wave-animation .wave-middle {
+  animation: moveWave 17s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.wave-bottom {
+  background-size: 100% 200px;
+}
+
+.wave-animation .wave-bottom {
+  animation: moveWave 23s ease-in-out infinite;
+}
 
 // - - -  header content - - - //
 
@@ -253,7 +253,8 @@ ul:active, a:active {
   margin-top: .7rem;
 }
 
-.main-btn button {
+.main-btn button,
+.poster-projects-btn button {
   color: $lightMain;
   background-color: transparent;
   border: 1px solid $lightMain;
@@ -262,7 +263,8 @@ ul:active, a:active {
   transition: box-shadow 0.6s;
 }
 
-.main-btn button:hover {
+.main-btn button:hover,
+.poster-projects-btn button:hover {
   background-color: transparent;
   cursor: pointer;
   border-color: $lightMain;
@@ -403,8 +405,122 @@ ul:active, a:active {
 /*-----------------------------------*/
 
 .projects-section {
-  margin-top: 140px;
+  margin-top: 40px;
   height: 3000px;
-  position: absolute;
   width: 100%;
+}
+
+.title-projects {
+  text-align: center;
+}
+
+.title-projects h1 {
+  font-family: $titleFont;
+  color: $lightMain;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.poster {
+  color: $lightMain;
+  display: flex;
+  align-items: center;
+  margin: 20px 0 100px 0;
+}
+
+.poster-body {
+  box-shadow: $boxShadowMain;
+  padding: 0;
+}
+
+.poster-body-header {
+  background-color: $lightMain;
+  color: $darkMain;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.poster-body-header h2 {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.poster-body-image-container {
+  height: 280px;
+  width: 100%;
+  background-color: $darkBlue;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster-detail-count {
+  margin: 0.5rem 0;
+  color: $deepDark;
+  font-size: 4rem;
+}
+
+.line {
+  width: 33%;
+  border-bottom: 1px solid $lightMain;
+  margin-bottom: 1rem;
+}
+
+.poster-body-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(200, 200, 200, 0.52), rgba(200, 200, 200, 0.73));
+}
+
+#poster-body-image-1 {
+  opacity: 0;
+}
+
+.poster-body-image button {
+  margin: 20px;
+  box-shadow: 0 30px 42px -12px #000;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0;
+  font-size: 1.2rem;
+  background-color: $deepDark;
+  border-color: $deepDark;
+  color: #fff;
+  transition: background-color 0.6s, border-color 0.6s, color 0.6s;
+}
+
+.poster-body-image button:hover {
+  background-color: $greenDark;
+  border-color: $greenDark;
+  transition: background-color 0.6s, border-color 0.6s;
+}
+
+.project-close-btn button:hover {
+  background-color: $orangeDark;
+  border-color: $orangeDark;
+  transition: background-color 0.6s, border-color 0.6s;
+}
+
+.poster-projects-btn button:focus,
+.poster-projects-btn button:active {
+  outline: none;
+  box-shadow: 0 30px 42px -12px #000;
+  border: 0;
+  color: #fff;
+  background-color: $deepDark;
+  transition: box-shadow 1s, border 1s, background-color 1s;
+}
+
+.r-reverse {
+  display: flex;
+  flex-direction: row-reverse;
 }
