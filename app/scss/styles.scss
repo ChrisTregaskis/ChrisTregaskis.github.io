@@ -138,30 +138,30 @@ ul:active, a:active {
   opacity: 1;
 }
 
-.wave-top {
-  background-size: 100% 200px;
-}
-
-.wave-animation .wave-top {
-  animation: moveWave 10s;
-}
-
-.wave-middle {
-  background-size: 100% 250px;
-}
-
-.wave-animation .wave-middle {
-  animation: moveWave 17s ease-in-out infinite;
-  animation-delay: 2s;
-}
-
-.wave-bottom {
-  background-size: 100% 200px;
-}
-
-.wave-animation .wave-bottom {
-  animation: moveWave 23s ease-in-out infinite;
-}
+//.wave-top {
+//  background-size: 100% 200px;
+//}
+//
+//.wave-animation .wave-top {
+//  animation: moveWave 10s;
+//}
+//
+//.wave-middle {
+//  background-size: 100% 250px;
+//}
+//
+//.wave-animation .wave-middle {
+//  animation: moveWave 17s ease-in-out infinite;
+//  animation-delay: 2s;
+//}
+//
+//.wave-bottom {
+//  background-size: 100% 200px;
+//}
+//
+//.wave-animation .wave-bottom {
+//  animation: moveWave 23s ease-in-out infinite;
+//}
 
 // - - -  header content - - - //
 
