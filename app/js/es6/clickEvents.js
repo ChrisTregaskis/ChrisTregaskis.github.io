@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
 
     document.getElementById('skill-btn').addEventListener('click', function() {
-        document.scrollingElement.scrollTop = 1525;
+        document.scrollingElement.scrollTop = 1440;
         return document.scrollingElement.scrollTop
     });
 
