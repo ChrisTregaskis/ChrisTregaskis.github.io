@@ -13,5 +13,10 @@ $(document).ready(function() {
         return document.scrollingElement.scrollTop
     });
 
+    document.getElementById('back-to-top').addEventListener('click', function () {
+        document.scrollingElement.scrollTop = 0;
+        return document.scrollingElement.scrollTop
+    })
+
 
 });

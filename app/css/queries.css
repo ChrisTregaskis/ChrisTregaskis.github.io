@@ -1,6 +1,9 @@
 @media only screen and (max-width: 600px) {
   .header-content-1 {
-    width: 400px; } }
+    width: 400px; }
+  .form-inputs,
+  .message-inputs {
+    width: 90%; } }
 
 @media only screen and (max-width: 400px) {
   .header-content-1,
