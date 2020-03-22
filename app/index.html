@@ -37,7 +37,7 @@
                 <a href="https://www.linkedin.com/in/christophertregaskis/"><ion-icon class="linkedin-ion lax" data-lax-preset="zoomOut fadeOut" name="logo-linkedin"></ion-icon></a>
             </div>
             <div class="main-btn">
-                <a href="#"><button class="btn btn-primary lax" data-lax-preset="zoomOut fadeOut">Get In Touch</button></a>
+                <a href="#contact"><button class="btn btn-primary lax" data-lax-preset="zoomOut fadeOut">Get In Touch</button></a>
             </div>
             <div class="header-down-arrow lax" data-lax-preset="linger">
                 <a id="anchor-about-me" href="#"><svg xmlns='http://www.w3.org/2000/svg' width='35' height='35' viewBox='0 0 512 512'><title>ionicons-v5-a</title><polyline points='112 268 256 412 400 268' style='fill:none;stroke:#f4f1d0;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px'/><line x1='256' y1='392' x2='256' y2='100' style='fill:none;stroke:#f4f1d0;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px'/></svg></a>
@@ -104,5 +104,26 @@
             </div>
         </div>
     </div>
+    <div class=" deepDark-div deepDark-div-top"></div>
+    <div class=" deepDark-div deepDark-div-mid"></div>
+    <div class=" deepDark-div deepDark-div-bottom"></div>
+    <div id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>CONTA<span>CT</span> CHRIS</h2>
+            <p>If you have questions, feel free to get in touch.</p>
+            <form method="POST" name="contactForm" action="contactFormHandler.php">
+                <input type="text" name="name" id="input-name" placeholder="Your name..." class="form-inputs">
+                <input type="email" name="email" id="input-email" placeholder="Your email..." class="form-inputs"><br>
+                <textarea name="message" id="input-message" placeholder="Your message..." class="message-inputs"></textarea><br>
+                <input type="submit" value="submit" id="form-submit">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <a><button id="back-to-top">back to top</button></a>
+        <div class="copyright-box">
+            <p>Copyright &copy; 2020 Chris Tregaskis</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -12,6 +12,7 @@ $purpleLight: #9b59b6;
 $purpleDark: #8e44ad;
 $orangeLight: #e67e22;
 $orangeDark: #d35400;
+$contactColour: #eee;
 $boxShadowMain: 0 20px 12px -12px #000;
 //$boxShadowHover: x
 
@@ -410,7 +411,7 @@ ul:active, a:active {
 
 .projects-section {
   margin-top: 40px;
-  height: 3000px;
+  height: auto;
   width: 100%;
 }
 
@@ -501,4 +502,121 @@ ul:active, a:active {
 .r-reverse {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.deepDark-div {
+  background-color: $deepDark;
+  width: 100%;
+  height: 20px;
+  margin: 0 0;
+}
+.deepDark-div-top {
+  margin-top: 60px;
+  opacity: 0.3;
+}
+
+.deepDark-div-mid {
+  opacity: 0.55;
+}
+
+.deepDark-div-bottom {
+  opacity: 0.85;
+}
+
+/*-----------------------------------*/
+/* CONTACT */
+/*-----------------------------------*/
+
+.contact-section {
+  height: auto;
+  background-color: $deepDark;
+
+}
+
+.contact-container {
+  color: $contactColour;
+  text-align: center;
+}
+
+.contact-container h2 {
+  letter-spacing: .6rem;
+  white-space: nowrap;
+  padding: 2rem 0 .5rem 0;
+  display: block;
+}
+
+.contact-container h2 span {
+  color: $orangeLight;
+}
+
+form {
+  padding: 70px 0;
+}
+
+.form-inputs,
+.message-inputs {
+  background-color: transparent;
+  color: $contactColour;
+  border: none;
+  margin: 10px;
+}
+
+.form-inputs {
+  width: 300px;
+  border-bottom: 1px solid $contactColour;
+}
+
+.message-inputs {
+  width: 630px;
+  height: 100px;
+  border-bottom: 1px solid $contactColour;
+}
+
+#form-submit,
+#back-to-top {
+  margin-top: 40px;
+  color: $contactColour;
+  background-color: transparent;
+  border: 1px solid $contactColour;
+  padding: 8px 15px;
+  border-radius: 0;
+  transition: box-shadow 0.6s;
+}
+
+#form-submit:hover,
+#back-to-top:hover {
+  cursor: pointer;
+  border-color: $orangeLight;
+  color: $contactColour;
+  box-shadow: inset 0 0 0 2px $orangeLight;
+  transition: box-shadow 0.6s;
+}
+
+footer {
+  height: 122px;
+  width: 100%;
+  color: $lightBlue;
+  background-color: $deepDark;
+  text-align: center;
+}
+
+#back-to-top {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+#back-to-top {
+  color: $lightBlue;
+  border: 1px solid $lightBlue;
+}
+
+#back-to-top:hover {
+  border-color: $lightBlue;
+  color: $lightBlue;
+  box-shadow: inset 0 0 0 2px $lightBlue;
+  transition: box-shadow 0.6s;
+}
+
+.copyright-box {
+  font-size: 0.8rem;
 }

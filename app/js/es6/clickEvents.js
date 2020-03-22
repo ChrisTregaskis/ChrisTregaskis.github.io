@@ -9,9 +9,14 @@ $(document).ready(function() {
     });
 
     document.getElementById('skill-btn').addEventListener('click', function() {
-        document.scrollingElement.scrollTop = 1525;
+        document.scrollingElement.scrollTop = 1440;
         return document.scrollingElement.scrollTop
     });
+
+    document.getElementById('back-to-top').addEventListener('click', function () {
+        document.scrollingElement.scrollTop = 0;
+        return document.scrollingElement.scrollTop
+    })
 
 
 });
