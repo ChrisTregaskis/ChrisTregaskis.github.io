@@ -26,4 +26,8 @@
     height: 350px;
     width: 100%;
     left: 50%;
-    transform: translate(-50%); } }
+    transform: translate(-50%); }
+  .contact-container h2 {
+    font-size: 1.5rem; }
+  .contact-container p {
+    font-size: 1rem; } }
