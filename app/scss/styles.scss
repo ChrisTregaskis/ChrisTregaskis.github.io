@@ -530,7 +530,6 @@ ul:active, a:active {
 .contact-section {
   height: auto;
   background-color: $deepDark;
-
 }
 
 .contact-container {
@@ -545,36 +544,19 @@ ul:active, a:active {
   display: block;
 }
 
-.contact-container h2 span {
+.contact-container span {
   color: $orangeLight;
 }
 
-form {
-  padding: 70px 0;
+.contact-container p {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  letter-spacing: .3rem;
+  font-family: $titleFont;
 }
 
-.form-inputs,
-.message-inputs {
-  background-color: transparent;
-  color: $contactColour;
-  border: none;
-  margin: 10px;
-}
-
-.form-inputs {
-  width: 300px;
-  border-bottom: 1px solid $contactColour;
-}
-
-.message-inputs {
-  width: 630px;
-  height: 100px;
-  border-bottom: 1px solid $contactColour;
-}
-
-#form-submit,
 #back-to-top {
-  margin-top: 40px;
+  margin: 30px 0;
   color: $contactColour;
   background-color: transparent;
   border: 1px solid $contactColour;
@@ -583,7 +565,6 @@ form {
   transition: box-shadow 0.6s;
 }
 
-#form-submit:hover,
 #back-to-top:hover {
   cursor: pointer;
   border-color: $orangeLight;
@@ -593,28 +574,11 @@ form {
 }
 
 footer {
-  height: 122px;
+  height: auto;
   width: 100%;
-  color: $lightBlue;
+  color: $contactColour;
   background-color: $deepDark;
   text-align: center;
-}
-
-#back-to-top {
-  font-size: 0.8rem;
-  margin-bottom: 10px;
-}
-
-#back-to-top {
-  color: $lightBlue;
-  border: 1px solid $lightBlue;
-}
-
-#back-to-top:hover {
-  border-color: $lightBlue;
-  color: $lightBlue;
-  box-shadow: inset 0 0 0 2px $lightBlue;
-  transition: box-shadow 0.6s;
 }
 
 .copyright-box {
