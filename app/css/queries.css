@@ -1,11 +1,19 @@
 @media only screen and (max-width: 600px) {
   .header-content-1 {
     width: 400px; }
+  #about-me-text {
+    width: 400px; }
   .form-inputs,
   .message-inputs {
-    width: 90%; } }
+    width: 90%; }
+  #menu ul {
+    font-size: 2.5rem; } }
 
 @media only screen and (max-width: 400px) {
+  #menu ul {
+    font-size: 1.8rem; }
+  #menu ul a {
+    padding: 3px 8px; }
   .header-content-1,
   .header-content-2 {
     width: 90%; }

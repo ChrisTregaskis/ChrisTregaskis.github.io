@@ -13,6 +13,7 @@
     <script defer rel="script" src="js/es6/projectsFetch.js"></script>
     <script defer rel="script" src="js/es6/skills.js"></script>
     <script defer rel="script" src="js/es6/onScroll.js"></script>
+    <script defer rel="script" src="js/es6/menu.js"></script>
     <script defer rel="script" src="js/es6/laxSetup.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
     <script defer src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
@@ -24,6 +25,19 @@
 </head>
 <body>
     <div id="progressBar1"></div>
+    <div id="menu">
+        <a id="close-menu"><ion-icon name="close-circle"></ion-icon></a>
+        <div class="open-menu-div">
+            <p id="menu-p">MENU</p>
+        </div>
+        <ul id="menu-ul">
+            <li><a id="menu-top">Top</a></li>
+            <li><a id="menu-about">About</a></li>
+            <li><a id="menu-skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
     <div class="headers-2"></div>
     <div class="headers-1"></div>
     <div class="header-container">
@@ -47,7 +61,7 @@
             <div class="chrisPicMain"></div>
             <h1 class="title-about-me">about me</h1>
             <div id="about-me-text">
-                <p class="about-me-text-p">I spent most of 2019 with my kids as a stay at home dad. Half way through the year, I explored a career change. After watching a developer  friend begin a build of an idea I had, I got absolutely encapsulated with code! After dabbling in a few Udemy courses, I decided to take the Full Stack Track at Mayden Academy. Whilst the front-end came a bit quicker to me, during the 16 week bootcamp, i’ve taken a big liking to back-end. I’m keen to show off what I’ve learnt, and am thoroughly enjoying the continued learning nature of software development. </p>
+                <p class="about-me-text-p">I spent most of 2019 with my kids as a stay at home dad. Half way through the year, I explored a career change. After watching a developer  friend begin a build of an idea I had, I got absolutely encapsulated with code! After dabbling in a few Udemy courses, I decided to take the Full Stack Track at Mayden Academy. Whilst the front-end came a bit quicker to me, during the 16 week bootcamp, I’ve taken a big liking to back-end. I’m keen to show off what I’ve learnt, and am thoroughly enjoying the continued learning nature of software development. </p>
             </div>
             <div class="main-btn">
                 <a id="skill-btn"><button class="btn btn-primary">Skills</button></a>
@@ -90,7 +104,7 @@
         <div class=" dark-div dark-div-mid"></div>
         <div class=" dark-div dark-div-bottom"></div>
     </div>
-    <div class="projects-section">
+    <div id="projects" class="projects-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 title-projects">
