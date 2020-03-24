@@ -12,9 +12,16 @@ $(document).ready(function() {
         $('#menu-ul').css('opacity', '1');
         $('#menu-ul').css('transition', 'opacity 0.6s');
         $('#close-menu ion-icon').css('visibility', 'visible');
-    })
+    });
 
-    document.getElementById('close-menu').addEventListener('click', function() {
+    $('#close-menu').click(() => { closeMenu() });
+    $('#menu-top').click(() => { closeMenu() });
+    $('#menu-about').click(() => { closeMenu() });
+    $('#menu-skills').click(() => { closeMenu() });
+    $('#menu-projects').click(() => { closeMenu() });
+    $('#menu-contact').click(() => { closeMenu() });
+
+    function closeMenu() {
         let menu = $('#menu');
 
         $('.open-menu-div').css('display', 'block');
@@ -26,5 +33,5 @@ $(document).ready(function() {
         $('#menu-ul').css('opacity', '0');
         $('#menu-ul').css('transition', 'opacity 0.6s');
         $('#close-menu ion-icon').css('visibility', 'hidden');
-    })
+    }
 });
