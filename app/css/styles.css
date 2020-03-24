@@ -32,8 +32,8 @@ body {
   background-color: #222;
   font-family: "Nanum Gothic", sans-serif; }
 
-ul, a,
-ul:active, a:active {
+ul, a, li,
+ul:active, a:active, li:active {
   list-style-type: none;
   text-decoration: none; }
 
@@ -47,10 +47,75 @@ ul:active, a:active {
   width: 5px;
   border-radius: 10px;
   background: linear-gradient(to top, #f4f1d0, transparent);
-  z-index: 50; }
+  z-index: 30; }
 
-.position-fixed {
-  position: fixed; }
+#menu {
+  position: fixed;
+  z-index: 25;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  clip-path: polygon(0 0, 100% -100%, 100% 100%);
+  color: #eee;
+  text-align: right;
+  overflow: hidden;
+  transition: color 0.3s;
+  font-family: brandon-grotesque, sans-serif; }
+
+.open-menu-div {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block; }
+
+#menu p:hover {
+  cursor: pointer;
+  color: #e67e22;
+  transition: color 0.3s; }
+
+#menu p {
+  transform: rotate(-315deg);
+  font-size: 0.8rem;
+  margin-left: 15px;
+  margin-top: 12px; }
+
+#menu ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  text-align: right;
+  margin: 25% 10px auto 0;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 4rem;
+  font-weight: lighter;
+  opacity: 0; }
+
+#menu ul a {
+  transition: border 0.6s;
+  padding: 8px 15px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: #eee; }
+
+#menu ul a:hover {
+  border: 1px solid #eee;
+  transition: border 0.6s;
+  cursor: pointer; }
+
+#close-menu ion-icon {
+  font-size: 40px;
+  margin-right: 10px;
+  margin-top: 10px;
+  transition: transform 0.6s;
+  color: #eee;
+  visibility: hidden; }
+
+#close-menu ion-icon:hover {
+  transform: rotate(360deg);
+  transition: transform 0.6s;
+  cursor: pointer; }
 
 /*-----------------------------------*/
 /* HEADER */
