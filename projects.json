@@ -52,11 +52,11 @@
     {
       "id": 6,
       "posterCount": "06",
-      "title": "Age & Nationalize",
-      "img": "../img/project-default-img.png",
-      "desc": "Enter your name and get back estimated age and likely country origin of name. Experimenting with Chart.js and Asnyc / Await functions",
-      "codeUrl": "x",
-      "demoUrl": "x",
+      "title": "Estimate Age & Nationality",
+      "img": "../img/project-estimateAge.png",
+      "desc": "Taking a given name and dynamically populating at chart as well as estimated age using a series of Async & Await functions and outputting display with Chart.js.",
+      "codeUrl": "https://github.com/ChrisTregaskis/estimateAgeAndNationalize",
+      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/estimateAgeAndNationalize/",
       "rReverseTrue": 1,
       "rReverse": "r-reverse"
     },
@@ -84,10 +84,10 @@
       "id": 9,
       "posterCount": "09",
       "title": "Pilot Project",
-      "img": "../img/project-default-img.png",
-      "desc": "Dynamically filling the products section of a page using handlebars",
-      "codeUrl": "x",
-      "demoUrl": "x"
+      "img": "../img/project-pilotShop.png",
+      "desc": "Given a JSON object, dynamically filling the products section of a page using handlebars. Omitted displaying an HTML element if data not in object.",
+      "codeUrl": "https://github.com/ChrisTregaskis/pilotShop-Handlebars",
+      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/pilotProjectV2/pilot-shop.html"
     },
     {
       "id": 10,
@@ -104,8 +104,8 @@
       "id": 11,
       "posterCount": "11",
       "title": "Second & Current Portfolio",
-      "img": "../img/project-default-img.png",
-      "desc": "9 weeks into the Mayden bootcamp, decided to have a go re-doing my online portfolio using SASS, Gulp, Babel, jQuery, JS, BOOTSTRAP, Lax, Chart.js along with HTML.",
+      "img": "../img/project-portfolioV2.png",
+      "desc": "9 weeks into the Mayden bootcamp, decided to have a go re-doing my online portfolio. I used gulp to manage SASS and Babel, handlebars and JS to dynamically display my projects from a local JSON file and chart.js to help illustrated my confidence and skill with the given tools picked up at the 16 week Bootcamp.",
       "codeUrl": "https://github.com/ChrisTregaskis/portfolioV2",
       "demoUrl": "x"
     }

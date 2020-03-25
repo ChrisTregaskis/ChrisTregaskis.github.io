@@ -73,7 +73,7 @@ $(document).ready(function() {
                     backgroundColor: bgColorMain,
                     borderWidth: borderWidthMain,
                     pointStyle: pointStyleMain,
-                    data: [60,25,50,50,40,65,45,40]
+                    data: [60,15,30,50,40,65,45,40]
                 }
             ]
         },
@@ -104,7 +104,7 @@ $(document).ready(function() {
                     backgroundColor: bgColorMain,
                     borderWidth: borderWidthMain,
                     pointStyle: pointStyleMain,
-                    data: [50, 10, 10, 30, 50, 65]
+                    data: [50, 35, 10, 30, 50, 65]
                 }
             ]
         },
