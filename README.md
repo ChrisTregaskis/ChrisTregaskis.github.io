@@ -1,1 +1,1 @@
-9 weeks into the Mayden Academy code bootcamp, decided to have a go re-doing my online portfolio using SASS, Gulp, Babel, jQuery, JS, BOOTSTRAP, Lax, Chart.js along with HTML.
+9 weeks into the Mayden bootcamp, decided to have a go re-doing my online portfolio. I used gulp to manage SASS and Babel, handlebars and JS to dynamically display my projects from a local JSON file and chart.js to help illustrated my confidence and skill with the given tools picked up at the 16 week Bootcamp.
