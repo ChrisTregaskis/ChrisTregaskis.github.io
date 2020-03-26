@@ -3,22 +3,22 @@ var sass = require('gulp-sass');
 var babel = require('gulp-babel');
 
 function sassCompile(cb) {
-    return gulp.src('app/scss/**/*.scss')
+    return gulp.src('src/scss/**/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('app/css'));
+        .pipe(gulp.dest('src/css'));
     cb();
 }
 
 function watch() {
-    gulp.watch('app/scss/**/*.scss', sassCompile);
+    gulp.watch('src/scss/**/*.scss', sassCompile);
 }
 
 gulp.task('babel', () =>
-    gulp.src('app/js/es6/**/*.js')
+    gulp.src('src/js/es6/**/*.js')
         .pipe(babel({
             presets: ['@babel/env']
         }))
-        .pipe(gulp.dest('app/js/es5'))
+        .pipe(gulp.dest('src/js/es5'))
 );
 
 exports.sass = sassCompile;
