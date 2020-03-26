@@ -96,7 +96,7 @@ $(document).ready(function() {
     let configPHP = {
         type: typeMain,
         data: {
-            labels: ["mySQL", "DIC & Factories", "mongoDB", "composer", "OOP", "Functional P."],
+            labels: ["mySQL", "DIC & Factories", "Slim", "mongoDB", "composer", "OOP", "Functional P."],
             datasets: [
                 {
                     label: labelMain,
@@ -104,7 +104,7 @@ $(document).ready(function() {
                     backgroundColor: bgColorMain,
                     borderWidth: borderWidthMain,
                     pointStyle: pointStyleMain,
-                    data: [50, 35, 10, 30, 50, 65]
+                    data: [50, 35, 25, 10, 30, 50, 65]
                 }
             ]
         },
