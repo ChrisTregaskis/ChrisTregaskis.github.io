@@ -17,8 +17,7 @@
       "desc": "I used JS to process input and a mixture of vanilla JS and jQuery to manipulate the output. Handlebars was used to populate a dynamic table of results",
       "codeUrl": "https://github.com/ChrisTregaskis/financeCalc",
       "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/financeCalc/app/",
-      "rReverseTrue": 1,
-      "rReverse": "r-reverse"
+      "rReverseTrue": 1
     },
     {
       "id": 3,
@@ -37,8 +36,7 @@
       "desc": "Using a combination of Sequel Pro and a recipe API, we built an OOP PHP app using curl, hydrator classes and view helper classes. Includes Unit Tests.",
       "codeUrl": "https://github.com/Mayden-Academy/2020-jan-makeAMealOfIt",
       "demoUrl": "x",
-      "rReverseTrue": 1,
-      "rReverse": "r-reverse"
+      "rReverseTrue": 1
     },
     {
       "id": 5,
@@ -57,8 +55,7 @@
       "desc": "Taking a given name and dynamically populating at chart as well as estimated age using a series of Async & Await functions and outputting display with Chart.js.",
       "codeUrl": "https://github.com/ChrisTregaskis/estimateAgeAndNationalize",
       "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/estimateAgeAndNationalize/",
-      "rReverseTrue": 1,
-      "rReverse": "r-reverse"
+      "rReverseTrue": 1
     },
     {
       "id": 7,
@@ -77,8 +74,7 @@
       "desc": "As a little challenge, used JS setInterval(), createElement() and apendChild() to create simple click game. Included a login page with PHP using SESSION.",
       "codeUrl": "https://github.com/ChrisTregaskis/clickGame/tree/master/clickGame",
       "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/clickGame/login.php",
-      "rReverseTrue": 1,
-      "rReverse": "r-reverse"
+      "rReverseTrue": 1
     },
     {
       "id": 9,
@@ -97,8 +93,7 @@
       "desc": "After 1 week of at Mayden Academy, built my first portfolio website with HTML, CSS and some basic jQuery to animate sections in as well as a burger menu.",
       "codeUrl": "https://github.com/ChrisTregaskis/projectPortfolioV1",
       "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/projectPortfolioV1/",
-      "rReverseTrue": 1,
-      "rReverse": "r-reverse"
+      "rReverseTrue": 1
     },
     {
       "id": 11,
