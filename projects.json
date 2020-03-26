@@ -22,6 +22,25 @@
     {
       "id": 3,
       "posterCount": "03",
+      "title": "Make A Meal Of It",
+      "img": "img/project-MAMOI.png",
+      "desc": "Using a combination of Sequel Pro and a recipe API, we built an OOP PHP app using curl, hydrator classes and view helper classes. Includes Unit Tests.",
+      "codeUrl": "https://github.com/Mayden-Academy/2020-jan-makeAMealOfIt",
+      "demoUrl": "x"
+    },
+    {
+      "id": 4,
+      "posterCount": "04",
+      "title": "Aptitude Test",
+      "img": "img/project-default-img.png",
+      "desc": "We worked on a legacy code base using JS with a sizable number of Async/Await dependencies. Took on major bug fix story as well as a feature to edit questions from specific tests.",
+      "codeUrl": "https://github.com/Mayden-Academy/aptitude-test",
+      "demoUrl": "x",
+      "rReverseTrue": 1
+    },
+    {
+      "id": 5,
+      "posterCount": "05",
       "title": "Pairs Game Browser App",
       "img": "img/project-pairs-game.png",
       "desc": "Written in a functional programming format in JS, we used a fetch to call function and populate html dynamically from a local json file. HTML and CSS for front end.",
@@ -29,80 +48,71 @@
       "demoUrl": "https://dev.maydenacademy.co.uk/projects/2020Jan/2020-jan-pairsGame/index.html"
     },
     {
-      "id": 4,
-      "posterCount": "04",
-      "title": "Make A Meal Of It",
-      "img": "img/project-MAMOI.png",
-      "desc": "Using a combination of Sequel Pro and a recipe API, we built an OOP PHP app using curl, hydrator classes and view helper classes. Includes Unit Tests.",
-      "codeUrl": "https://github.com/Mayden-Academy/2020-jan-makeAMealOfIt",
-      "demoUrl": "x",
-      "rReverseTrue": 1
-    },
-    {
-      "id": 5,
-      "posterCount": "05",
+      "id": 6,
+      "posterCount": "06",
       "title": "Pokedex!",
       "img": "img/project-pokedex.png",
       "desc": "A pokedex written in OOP using PHP. I used a hydrator class to instantiate each pokemon through a pokemonEntity class and dynamically display from a DB.",
       "codeUrl": "https://github.com/ChrisTregaskis/pokedex",
-      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/pokedex/"
-    },
-    {
-      "id": 6,
-      "posterCount": "06",
-      "title": "Estimate Age & Nationality",
-      "img": "img/project-estimateAge.png",
-      "desc": "Taking a given name and dynamically populating at chart as well as estimated age using a series of Async & Await functions and outputting display with Chart.js.",
-      "codeUrl": "https://github.com/ChrisTregaskis/estimateAgeAndNationalize",
-      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/estimateAgeAndNationalize/",
+      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/pokedex/",
       "rReverseTrue": 1
     },
     {
       "id": 7,
       "posterCount": "07",
-      "title": "Gits Got Talent",
-      "img": "img/project-gitsGotTalent.png",
-      "desc": "I built a page that displays the current top 3 rated profiles on git. Experimenting with git's own API and using handlebars to output results.",
-      "codeUrl": "https://github.com/ChrisTregaskis/gitsGotTalent",
-      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/gitsGotTalent/app/"
+      "title": "Estimate Age & Nationality",
+      "img": "img/project-estimateAge.png",
+      "desc": "Taking a given name and dynamically populating at chart as well as estimated age using a series of Async & Await functions and outputting display with Chart.js.",
+      "codeUrl": "https://github.com/ChrisTregaskis/estimateAgeAndNationalize",
+      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/estimateAgeAndNationalize/"
     },
     {
       "id": 8,
       "posterCount": "08",
-      "title": "Simple Login & Click Game",
-      "img": "img/project-login-click-game.png",
-      "desc": "As a little challenge, used JS setInterval(), createElement() and apendChild() to create simple click game. Included a login page with PHP using SESSION.",
-      "codeUrl": "https://github.com/ChrisTregaskis/clickGame/tree/master/clickGame",
-      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/clickGame/login.php",
+      "title": "Gits Got Talent",
+      "img": "img/project-gitsGotTalent.png",
+      "desc": "I built a page that displays the current top 3 rated profiles on git. Experimenting with git's own API and using handlebars to output results.",
+      "codeUrl": "https://github.com/ChrisTregaskis/gitsGotTalent",
+      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/gitsGotTalent/app/",
       "rReverseTrue": 1
     },
     {
       "id": 9,
       "posterCount": "09",
-      "title": "Pilot Project",
-      "img": "img/project-pilotShop.png",
-      "desc": "Given a JSON object, dynamically filling the products section of a page using handlebars. Omitted displaying an HTML element if data not in object.",
-      "codeUrl": "https://github.com/ChrisTregaskis/pilotShop-Handlebars",
-      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/pilotProjectV2/pilot-shop.html"
+      "title": "Simple Login & Click Game",
+      "img": "img/project-login-click-game.png",
+      "desc": "As a little challenge, used JS setInterval(), createElement() and apendChild() to create simple click game. Included a login page with PHP using SESSION.",
+      "codeUrl": "https://github.com/ChrisTregaskis/clickGame/tree/master/clickGame",
+      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/clickGame/login.php"
     },
     {
       "id": 10,
       "posterCount": "10",
-      "title": "First Ever Portfolio Build!",
-      "img": "img/project-portfolioV1.png",
-      "desc": "After 1 week of at Mayden Academy, built my first portfolio website with HTML, CSS and some basic jQuery to animate sections in as well as a burger menu.",
-      "codeUrl": "https://github.com/ChrisTregaskis/projectPortfolioV1",
-      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/projectPortfolioV1/",
+      "title": "Pilot Project",
+      "img": "img/project-pilotShop.png",
+      "desc": "Given a JSON object, dynamically filling the products section of a page using handlebars. Omitted displaying an HTML element if data not in object.",
+      "codeUrl": "https://github.com/ChrisTregaskis/pilotShop-Handlebars",
+      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/pilotProjectV2/pilot-shop.html",
       "rReverseTrue": 1
     },
     {
       "id": 11,
       "posterCount": "11",
+      "title": "First Ever Portfolio Build!",
+      "img": "img/project-portfolioV1.png",
+      "desc": "After 1 week of at Mayden Academy, built my first portfolio website with HTML, CSS and some basic jQuery to animate sections in as well as a burger menu.",
+      "codeUrl": "https://github.com/ChrisTregaskis/projectPortfolioV1",
+      "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/projectPortfolioV1/"
+    },
+    {
+      "id": 12,
+      "posterCount": "12",
       "title": "Second & Current Portfolio",
       "img": "img/project-portfolioV2.png",
       "desc": "9 weeks into the Mayden bootcamp, decided to have a go re-doing my online portfolio. I used gulp to manage SASS and Babel, handlebars and JS to dynamically display my projects from a local JSON file and chart.js to help illustrated my confidence and skill with the given tools picked up at the 16 week Bootcamp.",
       "codeUrl": "https://github.com/ChrisTregaskis/portfolioV2",
-      "demoUrl": "x"
+      "demoUrl": "x",
+      "rReverseTrue": 1
     }
   ]
 }
