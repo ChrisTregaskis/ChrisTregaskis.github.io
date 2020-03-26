@@ -1,3 +1,5 @@
+@import "node_modules/sass-autoprefixer/scss/prefixes";
+
 $titleFont: brandon-grotesque, sans-serif;
 $bodyFont: 'Nanum Gothic', sans-serif;
 $deepDark: #111;
@@ -23,6 +25,18 @@ $boxShadowMain: 0 20px 12px -12px #000;
   100% { color: #cbecda }
 }
 
+@-webkit-keyframes lightColors {
+  0% {
+    color: #bef1f9; }
+  25% {
+    color: #ffffff; }
+  50% {
+    color: #d8d4e5; }
+  75% {
+    color: #f0d4b1; }
+  100% {
+    color: #cbecda; } }
+
 @keyframes moveWave {
   0% {
     transform: translateX(0)  scaleY(1.05)
@@ -41,7 +55,25 @@ $boxShadowMain: 0 20px 12px -12px #000;
   }
 }
 
+@-webkit-keyframes moveWave {
+  0% {
+    -webkit-transform: translateX(0) scaleY(1.05);
+    transform: translateX(0) scaleY(1.05); }
+  25% {
+    -webkit-transform: translateX(-25%) scaleY(1);
+    transform: translateX(-25%) scaleY(1); }
+  50% {
+    -webkit-transform: translateX(-50%) scaleY(1.05);
+    transform: translateX(-50%) scaleY(1.05); }
+  75% {
+    -webkit-transform: translateX(-25%) scaleY(1);
+    transform: translateX(-25%) scaleY(1); }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1.05);
+    transform: translateX(0) scaleY(1.05); } }
+
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box
 }
 
@@ -70,6 +102,8 @@ ul:active, a:active, li:active {
   right: 0;
   width: 5px;
   border-radius: 10px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f4f1d0), to(transparent));
+  background: -o-linear-gradient(bottom, #f4f1d0, transparent);
   background: linear-gradient(to top, $lightMain, transparent);
   z-index: 30;
 }
@@ -83,10 +117,13 @@ ul:active, a:active, li:active {
   height: 60px;
   background-color: #000;
   //points are: top, left bottom, right bottom
+  -webkit-clip-path: polygon(0 0, 100% -100%, 100% 100%);
   clip-path: polygon(0 0, 100% -100%, 100% 100%);
   color: $contactColour;
   text-align: right;
   overflow: hidden;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
   transition: color 0.3s;
   font-family: $titleFont;
 }
@@ -101,10 +138,14 @@ ul:active, a:active, li:active {
 #menu p:hover {
   cursor: pointer;
   color: $orangeLight;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
   transition: color 0.3s;
 }
 
 #menu p {
+  -webkit-transform: rotate(-315deg);
+  -ms-transform: rotate(-315deg);
   transform: rotate(-315deg);
   font-size: 0.8rem;
   margin-left: 15px;
@@ -124,6 +165,8 @@ ul:active, a:active, li:active {
 }
 
 #menu ul a {
+  -webkit-transition: border 0.6s;
+  -o-transition: border 0.6s;
   transition: border 0.6s;
   padding: 8px 15px;
   border: 1px solid transparent;
@@ -133,6 +176,8 @@ ul:active, a:active, li:active {
 
 #menu ul a:hover {
   border: 1px solid $contactColour;
+  -webkit-transition: border 0.6s;
+  -o-transition: border 0.6s;
   transition: border 0.6s;
   cursor: pointer;
 }
@@ -141,14 +186,22 @@ ul:active, a:active, li:active {
   font-size: 40px;
   margin-right: 10px;
   margin-top: 10px;
-  transition: transform 0.6s;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  -o-transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
   color: $contactColour;
   visibility: hidden;
 }
 
 #close-menu ion-icon:hover {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
   transform: rotate(360deg);
-  transition: transform 0.6s;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  -o-transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
   cursor: pointer;
 }
 
@@ -242,13 +295,13 @@ ul:active, a:active, li:active {
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  @include vp-transform(translate(-50%, -50%));
   z-index: 20;
   text-align: center;
   color: $lightMain;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include vp-display(flex);
+  @include vp-flex-direction(column);
+  @include vp-justify-content(center);
 }
 
 .header-content-1 {
@@ -258,7 +311,7 @@ ul:active, a:active, li:active {
 .header-content-2 {
   visibility: hidden;
   opacity: 0;
-  transition: opacity 2s;
+  @include vp-transition(opacity 2s);
 }
 
 .chrisPicMain {
@@ -269,7 +322,7 @@ ul:active, a:active, li:active {
   background-position: center;
   margin: 0 auto;
   border-radius: 50%;
-  transform: scale(0.9);
+  @include vp-transform(scale(0.9));
 }
 
 .header-content-1 h1,
@@ -296,8 +349,8 @@ ul:active, a:active, li:active {
   width: 200px;
   height: 35px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  @include vp-display(flex);
+  @include vp-justify-content(space-between);
 }
 
 .social-icons ion-icon,
@@ -307,18 +360,18 @@ ul:active, a:active, li:active {
 }
 
 .social-icons a {
-  transition:  0.6s ease-out;
+  @include vp-transition(0.6s ease-out);
 }
 
 .social-icons a:hover {
-  transform: rotateZ(360deg);
+  @include vp-transform(rotateZ(360deg));
 }
 
 .github-ion:hover,
 .codepen-ion:hover,
 .ig-ion:hover,
 .linkedin-ion:hover {
-  animation: lightColors 3s linear infinite;
+  @include vp-animation(lightColors 3s linear infinite);
 }
 
 .main-btn {
@@ -333,7 +386,7 @@ ul:active, a:active, li:active {
   border: 1px solid $lightMain;
   padding: 8px 15px;
   border-radius: 0;
-  transition: box-shadow 0.6s;
+  @include vp-transition(box-shadow 0.6s);
 }
 
 .main-btn button:hover,
@@ -342,8 +395,8 @@ ul:active, a:active, li:active {
   cursor: pointer;
   border-color: $lightMain;
   color: $lightMain;
-  box-shadow: inset 0 0 0 2px $lightMain;
-  transition: box-shadow 0.6s;
+  @include vp-box-shadow(inset 0 0 0 2px $lightMain);
+  @include vp-transition(box-shadow 0.6s);
 }
 
 .header-down-arrow {
@@ -351,13 +404,13 @@ ul:active, a:active, li:active {
 }
 
 .header-down-arrow svg {
-  transform: scale(1);
-  transition: transform 0.6s;
+  @include vp-transform(scale(1));
+  @include vp-transition(transform 0.6s);
 }
 
 .header-down-arrow svg:hover {
-  transform: scale(1.2);
-  transition: transform 0.6s;
+  @include vp-transform(scale(1.2));
+  @include vp-transition(transform 0.6s);
 }
 
 /*-----------------------------------*/
@@ -381,7 +434,7 @@ ul:active, a:active, li:active {
 
 .skills-box {
   opacity: 0;
-  transition: opacity 1s;
+  @include vp-transition(opacity 1s);
 }
 
 .skills-box h1 {
@@ -408,7 +461,7 @@ ul:active, a:active, li:active {
   border: 1px solid $darkMain;
   padding: 8px 15px;
   border-radius: 0;
-  transition: box-shadow 0.6s;
+  @include vp-transition(box-shadow 0.6s);
 }
 
 .skills-buttons button:hover {
@@ -416,8 +469,8 @@ ul:active, a:active, li:active {
   cursor: pointer;
   border-color: $darkMain;
   color: $darkMain;
-  box-shadow: inset 0 0 0 2px $darkMain;
-  transition: box-shadow 0.6s;
+  @include vp-box-shadow(inset 0 0 0 2px $darkMain);
+  @include vp-transition(box-shadow 0.6s);
 }
 
 //being thoughtful for disabled users,
@@ -425,7 +478,7 @@ ul:active, a:active, li:active {
 .skills-buttons button:focus,
 .skills-buttons button:active {
   outline: none;
-  box-shadow: none;
+  @include vp-box-shadow(none);
   background-color: $darkMain;
   color: #fff;
 }
@@ -455,7 +508,7 @@ ul:active, a:active, li:active {
   height: 400px;
   width: 800px;
   left: 50%;
-  transform: translate(-50%);
+  @include vp-transform(translate(-50%));
 }
 
 .dark-div {
@@ -501,28 +554,28 @@ ul:active, a:active, li:active {
 
 .poster {
   color: $lightMain;
-  display: flex;
-  align-items: center;
+  @include vp-display(flex);
+  @include vp-align-items(center);
   margin: 20px 0 100px 0;
 }
 
 .poster-body {
-  box-shadow: $boxShadowMain;
+  @include vp-box-shadow($boxShadowMain);
   padding: 0;
-  transition: transform 0.4s;
+  @include vp-transition(transform 0.4s);
 }
 
 .poster-body:hover {
-  transform: scale(1.03);
-  transition: transform 0.4s;
+  @include vp-transform(scale(1.03));
+  @include vp-transition(transform 0.4s);
 }
 
 .poster-body-header {
   background-color: $lightMain;
   color: $darkMain;
   height: 100px;
-  display: flex;
-  align-items: flex-end;
+  @include vp-display(flex);
+  @include vp-align-items(flex-end);
 }
 
 .poster-body-header h2 {
@@ -536,9 +589,9 @@ ul:active, a:active, li:active {
   background-color: $darkBlue;
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include vp-display(flex);
+  @include vp-justify-content(center);
+  @include vp-align-items(center);
 }
 
 .poster-detail-count {
@@ -564,16 +617,16 @@ ul:active, a:active, li:active {
 .poster-projects-btn button:focus,
 .poster-projects-btn button:active {
   outline: none;
-  box-shadow: none;
+  @include vp-box-shadow(none);
   border: 0;
   color: #fff;
   background-color: $deepDark;
-  transition: border 1s, background-color 1s;
+  @include vp-transition(border 1s, background-color 1s);
 }
 
 .r-reverse {
-  display: flex;
-  flex-direction: row-reverse;
+  @include vp-display(flex);
+  @include vp-flex-direction(row-reverse);
 }
 
 .deepDark-div {
@@ -634,15 +687,15 @@ ul:active, a:active, li:active {
   border: 1px solid $contactColour;
   padding: 8px 15px;
   border-radius: 0;
-  transition: box-shadow 0.6s;
+  @include vp-transition(box-shadow 0.6s);
 }
 
 #back-to-top:hover {
   cursor: pointer;
   border-color: $orangeLight;
   color: $contactColour;
-  box-shadow: inset 0 0 0 2px $orangeLight;
-  transition: box-shadow 0.6s;
+  @include vp-box-shadow(inset 0 0 0 2px $orangeLight);
+  @include vp-transition(box-shadow 0.6s);
 }
 
 footer {
