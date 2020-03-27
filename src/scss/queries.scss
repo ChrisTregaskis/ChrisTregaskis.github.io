@@ -19,7 +19,7 @@
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 510px) {
 
   #menu ul {
     font-size: 1.8rem;
@@ -64,6 +64,10 @@
     width: 100%;
     left: 50%;
     transform: translate(-50%);
+  }
+
+  .dark-div-top {
+    margin-top: 75px;
   }
 
   .contact-container h2 {
