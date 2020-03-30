@@ -14,7 +14,9 @@
                 <p class="poster-detail-count">{{posterCount}}</p>
                 <div class="line"></div>
                 <p class="poster-detail-description">{{desc}}</p>
-                <a href="{{demoUrl}}" class="poster-projects-btn"><button class="btn btn-primary">Demo</button></a>
+                {{#if demoUrl}}
+                    <a href="{{demoUrl}}" class="poster-projects-btn"><button class="btn btn-primary">Demo</button></a>
+                {{/if}}
                 <a href="{{codeUrl}}" class="poster-projects-btn"><button class="btn btn-primary">Code</button></a>
             </div>
         </article>
