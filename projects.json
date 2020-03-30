@@ -14,7 +14,7 @@
       "posterCount": "02",
       "title": "Finance Calculator App",
       "img": "img/project-finance-calc.png",
-      "desc": "I used JS to process input and a mixture of vanilla JS and jQuery to manipulate the output. Handlebars was used to populate a dynamic table of results",
+      "desc": "JS was used to process input and a mixture of vanilla JS and jQuery to manipulate the output. I used handlebars to dynamically populate a schedule table of results.",
       "codeUrl": "https://github.com/ChrisTregaskis/financeCalc",
       "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/financeCalc/app/",
       "rReverseTrue": 1
