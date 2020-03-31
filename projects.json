@@ -35,7 +35,8 @@
       "title": "Make A Meal Of It",
       "img": "img/project-MAMOI.png",
       "desc": "Using a combination of Sequel Pro and a recipe API, we built an OOP PHP app using curl, hydrator classes and view helper classes. Includes Unit Tests.",
-      "codeUrl": "https://github.com/Mayden-Academy/2020-jan-makeAMealOfIt"
+      "codeUrl": "https://github.com/Mayden-Academy/2020-jan-makeAMealOfIt",
+      "demoUrl": "https://dev.maydenacademy.co.uk/projects/2020Jan/2020-jan-makeAMealOfIt/index.php"
     },
     {
       "id": 5,
