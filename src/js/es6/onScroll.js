@@ -99,21 +99,21 @@ $(document).ready(function() {
             $('#radar-chart-overview').css('transition', 'margin 1s');
         }
 
-        if (scroll > 1400) {
+        if (scroll > 1200) {
             $('.header-content-2').css('opacity', '0');
             $('.header-content-2').css('transition', 'opacity 1s');
         }
 
-        if (scroll < 1399) {
+        if (scroll < 1199) {
             $('.header-content-2').css('opacity', '1');
             $('.header-content-2').css('transition', 'opacity 1s');
         }
 
-        if (scroll > 1539) {
+        if (scroll > 1339) {
             $('.header-content-2').css('display', 'none');
         }
 
-        if (scroll < 1538) {
+        if (scroll < 1338) {
             $('.header-content-2').css('display', 'block');
         }
 

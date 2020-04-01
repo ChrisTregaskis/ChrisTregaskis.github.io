@@ -429,7 +429,7 @@ ul:active, a:active, li:active {
   margin-top: 149px;
   background-color: #fff;
   width: 100%;
-  height: 650px;
+  height: 494px;
 }
 
 .skills-box {
@@ -511,12 +511,54 @@ ul:active, a:active, li:active {
   @include vp-transform(translate(-50%));
 }
 
+// - - -  Skills Images - - - //
+
+.skills-img-box {
+  height: 250px;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.skills-inner-container {
+  height: 250px;
+}
+
+.img-box {
+  height: 100px;
+  margin: 10px;
+  display: inline-block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#skills-js-box {
+  display: block;
+  opacity: 1;
+}
+
+#skills-php-box {
+  display: none;
+  opacity: 0;
+}
+
+#skills-fe-box {
+  display: none;
+  opacity: 0;
+}
+
+#skills-tools-box {
+  display: none;
+  opacity: 0;
+}
+
 .dark-div {
   background-color: $darkMain;
   width: 100%;
   height: 20px;
   margin: 0 0;
 }
+
 .dark-div-top {
   margin-top: 60px;
   opacity: 0.4;

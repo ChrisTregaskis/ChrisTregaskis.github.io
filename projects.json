@@ -7,7 +7,7 @@
       "img": "img/project-slimTodoApp.png",
       "desc": "Built using Slim framework, OOP and MVC. Uses MySQL database and combination of PHP and JS to dynamically display, add, edit and delete items. Drag & drop feature included to re-organise active todos that saves automatically in DB and is reflected upon page load .",
       "codeUrl": "https://github.com/ChrisTregaskis/slimTodoApp",
-      "demoUrl": "https://vimeo.com/user97934888/review/402308514/cb8c66560f",
+      "demoUrl": "https://vimeo.com/402308514",
       "rReverseTrue": 1
     },
     {
@@ -45,6 +45,7 @@
       "img": "img/project-default-img.png",
       "desc": "We worked on a legacy code base using JS with a sizable number of Async/Await dependencies. Took on major bug fix story as well as a feature to edit questions from specific tests.",
       "codeUrl": "https://github.com/Mayden-Academy/aptitude-test",
+      "demoUrl": "http://dev.maydenacademy.co.uk/projects/2017/aptitude-test/app/",
       "rReverseTrue": 1
     },
     {
@@ -118,7 +119,7 @@
       "posterCount": "13",
       "title": "Second & Current Portfolio",
       "img": "img/project-portfolioV2.png",
-      "desc": "9 weeks into the Mayden bootcamp, decided to have a go re-doing my online portfolio. I used gulp to manage SASS and Babel, sass-autoprefixer in scss, handlebars and JS to dynamically display my projects from a local JSON file and chart.js to help illustrated my confidence and skill with the given tools picked up at the 16 week Bootcamp.",
+      "desc": "9 weeks into the Mayden bootcamp, decided to have a go re-doing my online portfolio. I used gulp to manage SASS and Babel, sass-autoprefixer package in scss and a combination of handlebars and JS to dynamically display my projects from a local JSON file.",
       "codeUrl": "https://github.com/ChrisTregaskis/portfolioV2",
       "demoUrl": "https://christregaskis.github.io/",
       "rReverseTrue": 1
