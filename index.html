@@ -12,7 +12,7 @@
     <script defer rel="script" src="src/js/es6/menu.js"></script>
     <script defer rel="script" src="src/js/es6/clickEvents.js"></script>
     <script defer rel="script" src="src/js/es6/projectsFetch.js"></script>
-    <script defer rel="script" src="src/js/es6/skills.js"></script>
+<!--    <script defer rel="script" src="src/js/es6/skills.js"></script>-->
     <script defer rel="script" src="src/js/es6/onScroll.js"></script>
     <script defer rel="script" src="src/js/es6/laxSetup.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
@@ -85,20 +85,52 @@
         <div class="skills-box">
             <h1 id="skills-container-h1">languages & tools</h1>
             <div class="skills-buttons">
-                <a id="skill-overview-btn"><button class="btn btn-primary">Overview</button></a>
                 <a id="skill-js-btn"><button class="btn btn-primary">JavaScript</button></a>
                 <a id="skill-php-btn"><button class="btn btn-primary">PHP</button></a>
-                <a id="skill-css-btn"><button class="btn btn-primary">CSS</button></a>
+                <a id="skill-fe-btn"><button class="btn btn-primary">Front End</button></a>
                 <a id="skill-tools-btn"><button class="btn btn-primary">Tools</button></a>
-                <a id="skill-attributes-btn"><button class="btn btn-primary">Attributes</button></a>
             </div>
-            <div class="spider-graph-container">
-                <div class="overview-box canvas-skill"><canvas id="radar-chart-overview"></canvas></div>
-                <div class="js-box canvas-skill"><canvas id="radar-chart-js"></canvas></div>
-                <div class="php-box canvas-skill"><canvas id="radar-chart-php"></canvas></div>
-                <div class="css-box canvas-skill"><canvas id="radar-chart-css"></canvas></div>
-                <div class="tools-box canvas-skill"><canvas id="radar-chart-tools"></canvas></div>
-                <div class="attributes-box canvas-skill"><canvas id="radar-chart-attributes"></canvas></div>
+        </div>
+        <div class="container skills-img-box">
+            <div class="row skills-imgs">
+                <div id="skills-js-box" class="col-md-10 offset-md-1 skills-inner-container">
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-jquery.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-nodeJS.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-babel.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-npm.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-JSTypescript.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-chartJS.jpg')"></div>
+                </div>
+            </div>
+            <div class="row skills-imgs">
+                <div id="skills-php-box" class="col-md-10 offset-md-1 skills-inner-container">
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-phpLogo.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-slim.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-mongoDb.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-composer.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-mySQL.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-phpstorm.png')"></div>
+                </div>
+            </div>
+            <div class="row skills-imgs">
+                <div id="skills-fe-box" class="col-md-10 offset-md-1 skills-inner-container">
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-html5.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-css3.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-bootstrap.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-lax.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-sass.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-autoPrefixer.png')"></div>
+                </div>
+            </div>
+            <div class="row skills-imgs">
+                <div id="skills-tools-box" class="col-md-10 offset-md-1 skills-inner-container">
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-doocker.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-gulp.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-github.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-postman.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-terminal.png')"></div>
+                    <div class="col-3 img-box" style="background-image: url('img/skillsImgs/skills-stackoverflow.png')"></div>
+                </div>
             </div>
         </div>
         <div class=" dark-div dark-div-top"></div>
