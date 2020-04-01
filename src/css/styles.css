@@ -390,7 +390,7 @@ ul:active, a:active, li:active {
   margin-top: 149px;
   background-color: #fff;
   width: 100%;
-  height: 650px; }
+  height: 494px; }
 
 .skills-box {
   opacity: 0;
@@ -466,6 +466,38 @@ ul:active, a:active, li:active {
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
   transform: translate(-50%); }
+
+.skills-img-box {
+  height: 250px;
+  margin-top: 20px;
+  padding: 0; }
+
+.skills-inner-container {
+  height: 250px; }
+
+.img-box {
+  height: 100px;
+  margin: 10px;
+  display: inline-block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+#skills-js-box {
+  display: block;
+  opacity: 1; }
+
+#skills-php-box {
+  display: none;
+  opacity: 0; }
+
+#skills-fe-box {
+  display: none;
+  opacity: 0; }
+
+#skills-tools-box {
+  display: none;
+  opacity: 0; }
 
 .dark-div {
   background-color: #222;
