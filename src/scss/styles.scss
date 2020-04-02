@@ -756,3 +756,22 @@ footer p {
 .copyright-box {
   font-size: 0.8rem;
 }
+
+#browserCatchBody {
+  margin: 0;
+  padding: 0;
+}
+
+#browserCatchContainer {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+}
+
+.browserCatchBox {
+  margin-left: 50px;
+  margin-top: 50px;
+}
