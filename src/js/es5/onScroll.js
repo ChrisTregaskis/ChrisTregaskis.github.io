@@ -54,11 +54,11 @@ $(document).ready(function () {
 
     checkOffSet();
 
-    if (scroll > 900) {
+    if (scroll > 750) {
       $('.header-content').css('z-index', '-1');
     }
 
-    if (scroll < 899) {
+    if (scroll < 749) {
       $('.header-content').css('z-index', '20');
     }
 
@@ -91,11 +91,21 @@ $(document).ready(function () {
       $('#radar-chart-overview').css('transition', 'margin 1s');
     }
 
-    if (scroll > 1500) {
+    if (scroll > 1200) {
+      $('.header-content-2').css('opacity', '0');
+      $('.header-content-2').css('transition', 'opacity 1s');
+    }
+
+    if (scroll < 1199) {
+      $('.header-content-2').css('opacity', '1');
+      $('.header-content-2').css('transition', 'opacity 1s');
+    }
+
+    if (scroll > 1339) {
       $('.header-content-2').css('display', 'none');
     }
 
-    if (scroll < 1499) {
+    if (scroll < 1338) {
       $('.header-content-2').css('display', 'block');
     } //progress bar --
 
