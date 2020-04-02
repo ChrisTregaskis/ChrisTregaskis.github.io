@@ -67,7 +67,7 @@ $(document).ready(function () {
         backgroundColor: bgColorMain,
         borderWidth: borderWidthMain,
         pointStyle: pointStyleMain,
-        data: [60, 25, 50, 50, 40, 65, 45, 40]
+        data: [60, 15, 30, 50, 40, 65, 45, 40]
       }]
     },
     options: {
@@ -88,14 +88,14 @@ $(document).ready(function () {
   var configPHP = {
     type: typeMain,
     data: {
-      labels: ["mySQL", "DIC & Factories", "mongoDB", "composer", "OOP", "Functional P."],
+      labels: ["mySQL", "DIC & Factories", "Slim", "mongoDB", "composer", "OOP", "Functional P."],
       datasets: [{
         label: labelMain,
         fill: fillMain,
         backgroundColor: bgColorMain,
         borderWidth: borderWidthMain,
         pointStyle: pointStyleMain,
-        data: [50, 10, 10, 30, 50, 65]
+        data: [50, 35, 25, 10, 30, 50, 65]
       }]
     },
     options: {

@@ -1,6 +1,6 @@
 "use strict";
 
-fetch('../projects.json').then(function (data) {
+fetch('projects.json').then(function (data) {
   return data.json();
 }).then(function (fetchedProjects) {
   fetch('hand.hbs').then(function (handData) {
