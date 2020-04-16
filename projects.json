@@ -24,7 +24,7 @@
       "posterCount": "03",
       "title": "Wine Collection App",
       "img": "img/project-wine-collection-app-2.png",
-      "desc": "After 1 week of PHP training, I built a collection app that used Sequal Pro to manage the DB and PHP to dynamically display, add and delete items. Functions are unit tested.",
+      "desc": "After 1 week of PHP training, I built a collection app that used Sequel Pro to manage the DB and PHP to dynamically display, add and delete items. Functions are unit tested.",
       "codeUrl": "https://github.com/ChrisTregaskis/wineCollection",
       "demoUrl": "http://dev.maydenacademy.co.uk/students/2020/jan/chris/collectionsApp/index.php"
     },
